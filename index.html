@@ -1,1657 +1,370 @@
-
-
-Skip to content
-Using Gmail with screen readers
-2 of 25,898
-Pooki Planner
-Inbox
-
-Annica Grote
-Attachments
-5:29 PM (1 hour ago)
-to me
-
-Find attached is a planner for my dear pooki. 
-Please let me know if something dont work or if u want it differently.
-Happy planning!
- One attachment
-  •  Scanned by Gmail
-Hey darling, got it. Will check the planner out now.
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Pooki's Planner</title>
-<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
-<style>
-:root {
-  --bg:#F7F5F2; --surface:#FFFFFF; --dark:#1A1814; --mid:#6B6760; --muted:#A8A49F; --border:#E4E0DA;
-  --blue:#2B5CE6; --blue-l:#D6E0FB; --blue-ll:#EEF2FD;
-  --yellow:#C98C00; --yellow-l:#FAE8B2; --yellow-ll:#FDF6E3;
-  --green:#1A7A45; --green-l:#C4EACF; --green-ll:#EAF7EE;
-  --red:#C0392B; --red-l:#F5C6C2; --red-ll:#FDF0EF;
-  --purple:#6830C4; --purple-l:#E0D0F8; --purple-ll:#F3EDFC;
-  --food:#A34010; --food-l:#F5D5BF; --food-ll:#FDF2EB;
-  --rest:#4A5568; --rest-l:#E2E8F0; --rest-ll:#F7FAFC;
-  --now-line:#E53E3E;
-}
-*{box-sizing:border-box;margin:0;padding:0}
-html,body{height:100%;font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--dark);overflow:hidden}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amber Folio Dark Photography Portfolio by TemplateMo</title>
+    <link rel="stylesheet" href="templatemo-amber-folio.css">
+<!--
 
-/* ── APP SHELL ── */
-.app{display:flex;height:100vh;overflow:hidden}
+TemplateMo 615 Amber Folio
 
-/* ── SIDEBAR ── */
-.sidebar{width:240px;flex-shrink:0;background:var(--dark);display:flex;flex-direction:column;overflow:hidden;z-index:10}
-.sb-head{padding:20px 16px 14px;border-bottom:1px solid rgba(255,255,255,.08)}
-.sb-head h1{font-family:'DM Serif Display',serif;font-size:20px;color:#fff;font-weight:400;line-height:1.1;margin-bottom:2px}
-.sb-head .tagline{font-size:10px;color:rgba(255,255,255,.35);font-style:italic}
-.sb-new-btn{margin:12px 12px 6px;background:var(--blue);color:#fff;border:none;border-radius:9px;padding:10px 14px;font-size:12px;font-weight:600;font-family:inherit;cursor:pointer;display:flex;align-items:center;gap:6px;transition:background .15s}
-.sb-new-btn:hover{background:#1e49c9}
-.sb-section{padding:6px 12px 4px;font-size:9px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.25)}
-.sb-list{flex:1;overflow-y:auto;padding:0 8px 12px}
-.sb-list::-webkit-scrollbar{width:3px}
-.sb-list::-webkit-scrollbar-thumb{background:rgba(255,255,255,.15);border-radius:2px}
-.sb-calendar-wrap{margin:8px 12px 10px;border:1px solid rgba(255,255,255,.1);border-radius:10px;overflow:hidden;background:rgba(255,255,255,.03)}
-.sb-calendar-head{padding:8px 10px;border-bottom:1px solid rgba(255,255,255,.08);display:flex;align-items:center;gap:8px;color:rgba(255,255,255,.8)}
-.sb-calendar-head .sch-label{font-size:10px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;flex:1}
-.sb-calendar-head .sch-nav{border:none;background:transparent;color:inherit;font-size:12px;cursor:pointer;padding:0 4px;line-height:1}
-.sb-calendar-grid{display:grid;grid-template-columns:repeat(7,1fr);gap:2px;padding:8px}
-.sb-cal-dow,.sb-cal-day{font-size:9px;text-align:center}
-.sb-cal-dow{color:rgba(255,255,255,.35);font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding-bottom:2px}
-.sb-cal-day{min-height:26px;border-radius:6px;display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,.68);cursor:pointer;transition:background .12s,color .12s;position:relative}
-.sb-cal-day:hover{background:rgba(255,255,255,.08);color:#fff}
-.sb-cal-day.other{opacity:.25;cursor:default}
-.sb-cal-day.today{background:rgba(43,92,230,.2);color:#fff}
-.sb-cal-day.has-plan::after{content:'';position:absolute;bottom:4px;width:4px;height:4px;border-radius:50%;background:rgba(255,255,255,.8)}
-.sb-item{padding:8px 10px;border-radius:8px;cursor:pointer;margin-bottom:2px;transition:background .12s;display:flex;flex-direction:column;gap:1px}
-.sb-item:hover{background:rgba(255,255,255,.07)}
-.sb-item.active{background:rgba(255,255,255,.13)}
-.sb-item .si-date{font-size:11px;font-weight:600;color:rgba(255,255,255,.85)}
-.sb-item .si-type{font-size:10px;color:rgba(255,255,255,.38)}
-.sb-empty{padding:16px 10px;font-size:11px;color:rgba(255,255,255,.25);font-style:italic;text-align:center}
+https://templatemo.com/tm-615-amber-folio
 
-/* ── MAIN AREA ── */
-.main{flex:1;display:flex;flex-direction:column;overflow:hidden}
-.topbar{background:var(--surface);border-bottom:1px solid var(--border);padding:0 20px;height:52px;display:flex;align-items:center;gap:10px;flex-shrink:0}
-.topbar-title{font-family:'DM Serif Display',serif;font-size:17px;font-weight:400;flex:1}
-.topbar-date{font-size:11px;color:var(--muted);font-family:'DM Mono',monospace}
-.topbar-note{font-size:11px;color:var(--mid);font-style:italic;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:280px}
-.tb-btn{padding:6px 13px;border:1.5px solid var(--border);border-radius:7px;background:white;font-family:inherit;font-size:11px;font-weight:600;color:var(--mid);cursor:pointer;transition:all .12s;display:flex;align-items:center;gap:5px}
-.tb-btn:hover{border-color:var(--dark);color:var(--dark)}
-.tb-btn.primary{background:var(--dark);color:white;border-color:var(--dark)}
-.tb-btn.primary:hover{background:#333}
-.tb-btn.success{background:var(--green);color:white;border-color:var(--green)}
-.tb-btn.ghost{background:transparent}
-.saved-toast{font-size:11px;font-weight:600;color:var(--green);opacity:0;transition:opacity .3s;white-space:nowrap}
-.saved-toast.show{opacity:1}
-
-/* ── CONTENT PANELS ── */
-.content{flex:1;display:flex;overflow:hidden}
-.panel-left{width:300px;flex-shrink:0;overflow-y:auto;background:var(--surface);border-right:1px solid var(--border);padding:18px}
-.panel-left::-webkit-scrollbar{width:3px}
-.panel-left::-webkit-scrollbar-thumb{background:var(--border);border-radius:2px}
-.panel-right{flex:1;overflow-y:auto;background:var(--bg);padding:18px 20px 40px}
-.panel-right::-webkit-scrollbar{width:4px}
-.panel-right::-webkit-scrollbar-thumb{background:var(--border);border-radius:2px}
-
-/* ── SETUP PANEL ── */
-.section-label{font-size:9px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-bottom:8px;display:block}
-.panel-section{margin-bottom:18px}
-.wake-row{display:flex;align-items:center;gap:12px}
-.wake-row .section-label{margin-bottom:0;white-space:nowrap}
-.wake-input{border:1.5px solid var(--border);border-radius:8px;padding:8px 10px;font-size:13px;font-family:'DM Mono',monospace;font-weight:500;color:var(--dark);background:var(--bg);outline:none;transition:border-color .15s;width:110px}
-.wake-input:focus{border-color:var(--blue)}
-
-/* Date picker row */
-.date-row{display:flex;align-items:center;gap:12px;margin-bottom:14px}
-.date-row .section-label{margin-bottom:0;white-space:nowrap}
-.date-input{border:1.5px solid var(--border);border-radius:8px;padding:8px 10px;font-size:12px;font-family:'DM Mono',monospace;font-weight:500;color:var(--dark);background:var(--bg);outline:none;transition:border-color .15s;flex:1}
-.date-input:focus{border-color:var(--blue)}
-
-.type-grid{display:grid;grid-template-columns:1fr 1fr;gap:7px}
-.type-btn{padding:10px 9px;border-radius:10px;border:2px solid var(--border);background:var(--bg);cursor:pointer;text-align:left;transition:all .15s;font-family:inherit}
-.type-btn:hover{transform:translateY(-1px);box-shadow:0 3px 10px rgba(0,0,0,.08)}
-.type-btn .tb-emoji{font-size:16px;display:block;margin-bottom:4px}
-.type-btn .tb-name{font-size:11px;font-weight:600;color:var(--dark);display:block}
-.type-btn .tb-desc{font-size:10px;color:var(--muted);display:block;margin-top:1px;line-height:1.3}
-.type-btn.sel-good{background:var(--blue-ll);border-color:var(--blue)}
-.type-btn.sel-chill{background:var(--yellow-ll);border-color:var(--yellow)}
-.type-btn.sel-exhausted{background:var(--red-ll);border-color:var(--red)}
-.type-btn.sel-mealprep{background:var(--purple-ll);border-color:var(--purple)}
-.task-card{border:1.5px solid var(--border);border-radius:10px;background:var(--bg);padding:12px;margin-bottom:9px}
-.task-card-header{display:flex;align-items:center;gap:7px;margin-bottom:9px}
-.task-dot{width:8px;height:8px;border-radius:50%;flex-shrink:0}
-.dot-big{background:var(--blue)}.dot-med{background:var(--yellow)}.dot-small{background:var(--green)}
-.tc-label{font-size:10px;font-weight:700;color:var(--mid);text-transform:uppercase;letter-spacing:.06em}
-.tc-hint{font-size:10px;color:var(--muted);margin-left:auto}
-.task-input-shell{position:relative;margin-bottom:6px}
-.task-input-shell:last-of-type{margin-bottom:0}
-.task-input-shell .task-input{margin-bottom:0;padding-right:92px}
-.task-randomize-btn{position:absolute;right:6px;top:50%;transform:translateY(-50%);border:none;background:var(--dark);color:white;border-radius:999px;padding:5px 8px;font-family:inherit;font-size:9px;font-weight:700;cursor:pointer;transition:background .15s,transform .15s}
-.task-randomize-btn:hover{background:#333;transform:translateY(-50%) scale(1.02)}
-.task-randomize-btn:active{transform:translateY(-50%) scale(.98)}
-.task-input{width:100%;border:1.5px solid var(--border);border-radius:7px;padding:7px 10px;font-size:12px;font-family:inherit;color:var(--dark);background:white;outline:none;transition:border-color .15s;margin-bottom:6px}
-.task-input:last-of-type{margin-bottom:0}
-.task-input:focus{border-color:var(--blue)}
-.task-input::placeholder{color:var(--muted)}
-
-/* ── DROPDOWN CHIPS (collapsible ideas) ── */
-.chips-dropdown{margin-top:8px}
-.chips-toggle{display:flex;align-items:center;gap:5px;background:none;border:none;font-family:inherit;font-size:10px;font-weight:600;color:var(--muted);cursor:pointer;padding:0;letter-spacing:.05em;text-transform:uppercase;transition:color .12s}
-.chips-toggle:hover{color:var(--mid)}
-.chips-toggle .ct-arrow{font-size:9px;transition:transform .2s;display:inline-block}
-.chips-toggle.open .ct-arrow{transform:rotate(90deg)}
-.chips-body{display:none;padding-top:7px}
-.chips-body.open{display:flex;flex-wrap:wrap;gap:5px}
-.chips-title{display:flex;align-items:center;gap:6px;font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin-bottom:6px}
-.chip{background:white;border:1.5px solid var(--border);border-radius:999px;padding:4px 10px;font-size:10px;font-family:inherit;color:var(--mid);cursor:pointer;transition:all .12s;white-space:nowrap}
-.chip:hover{border-color:var(--dark);color:var(--dark)}
-.chip.active{background:var(--dark);border-color:var(--dark);color:white}
-
-.notes-ta{width:100%;min-height:60px;border:1.5px solid var(--border);border-radius:8px;padding:9px;font-family:inherit;font-size:12px;resize:vertical;outline:none;background:white;transition:border-color .15s;line-height:1.5}
-.notes-ta:focus{border-color:var(--blue)}
-.notes-ta::placeholder{color:var(--muted)}
-.gen-btn{width:100%;padding:13px;background:var(--dark);color:white;border:none;border-radius:10px;font-family:inherit;font-size:13px;font-weight:600;cursor:pointer;transition:all .15s;margin-top:4px}
-.gen-btn:hover{background:#333;transform:translateY(-1px);box-shadow:0 5px 16px rgba(0,0,0,.15)}
-
-/* ── CALENDAR VIEW ── */
-#screen-calendar{display:none;position:absolute;inset:0;background:var(--bg);z-index:50;flex-direction:column}
-#screen-calendar.active{display:flex}
-.cal-header{padding:16px 20px 12px;background:var(--surface);border-bottom:1px solid var(--border);display:flex;align-items:center;gap:12px}
-.cal-header h2{font-family:'DM Serif Display',serif;font-size:18px;font-weight:400;flex:1}
-.cal-nav-btn{padding:5px 12px;border:1.5px solid var(--border);border-radius:7px;background:white;font-family:inherit;font-size:12px;font-weight:600;color:var(--mid);cursor:pointer;transition:all .12s}
-.cal-nav-btn:hover{border-color:var(--dark);color:var(--dark)}
-.cal-grid-wrap{flex:1;overflow:auto;padding:20px}
-.cal-grid{display:grid;grid-template-columns:repeat(7,1fr);gap:6px;min-width:560px}
-.cal-dow{text-align:center;font-size:9px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);padding-bottom:6px}
-.cal-day{min-height:72px;background:white;border:1.5px solid var(--border);border-radius:8px;padding:6px 7px;cursor:pointer;transition:all .12s;position:relative}
-.cal-day:hover{border-color:var(--mid);box-shadow:0 2px 8px rgba(0,0,0,.06)}
-.cal-day.today{border-color:var(--blue);box-shadow:0 0 0 2px var(--blue-l)}
-.cal-day.has-plan{background:var(--bg)}
-.cal-day.other-month{opacity:.35}
-.cal-day .cd-num{font-size:11px;font-weight:600;color:var(--mid);margin-bottom:4px}
-.cal-day.today .cd-num{color:var(--blue)}
-.cal-day-badge{font-size:9px;border-radius:5px;padding:2px 5px;font-weight:600;margin-bottom:2px;display:block}
-.cb-good{background:var(--blue-ll);color:var(--blue)}
-.cb-chill{background:var(--yellow-ll);color:var(--yellow)}
-.cb-exhausted{background:var(--red-ll);color:var(--red)}
-.cb-mealprep{background:var(--purple-ll);color:var(--purple)}
-
-/* ── SCHEDULE VIEW ── */
-#screen-schedule{display:none}
-#screen-schedule.active{display:flex;flex-direction:column;flex:1;overflow:hidden}
-.sched-body{flex:1;display:flex;overflow:hidden}
-.sched-main{flex:1;overflow-y:auto;padding:16px 18px 40px}
-.sched-main::-webkit-scrollbar{width:4px}
-.sched-main::-webkit-scrollbar-thumb{background:var(--border);border-radius:2px}
-.sched-banner{background:var(--surface);border:1.5px solid var(--border);border-radius:10px;padding:10px 12px;margin-bottom:12px;display:flex;align-items:center;justify-content:space-between;gap:10px}
-.sched-banner .sb-copy{font-size:11px;color:var(--mid);line-height:1.4}
-.sched-banner .sb-copy strong{color:var(--dark)}
-.sched-banner .sb-action{font-size:11px;font-weight:700;color:var(--blue);white-space:nowrap}
-.notes-panel{width:260px;flex-shrink:0;border-left:1px solid var(--border);background:var(--surface);overflow-y:auto;padding:16px}
-.notes-panel::-webkit-scrollbar{width:3px}
-.notes-panel::-webkit-scrollbar-thumb{background:var(--border);border-radius:2px}
-
-/* ── SUMMARY CARD (with task checkboxes) ── */
-.summary-card{border:1.5px solid var(--border);border-radius:9px;padding:12px;margin-bottom:14px}
-.summary-card .sc-title{font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin-bottom:7px}
-.summary-row{display:flex;align-items:flex-start;gap:7px;margin-bottom:5px;font-size:11px;cursor:pointer}
-.summary-row:hover .sr-text{color:var(--dark)}
-.sr-dot{width:7px;height:7px;border-radius:50%;flex-shrink:0;margin-top:3px}
-.sr-text{color:var(--mid);line-height:1.4;transition:color .12s}
-.sr-check{width:13px;height:13px;border:1.5px solid var(--border);border-radius:3px;flex-shrink:0;margin-top:1px;display:flex;align-items:center;justify-content:center;transition:all .12s;cursor:pointer}
-.sr-check.done{background:var(--green);border-color:var(--green)}
-.sr-check.done::after{content:'✓';font-size:8px;color:white;font-weight:700}
-.sr-text.done-text{text-decoration:line-through;opacity:.5}
-.rollover-badge{display:inline-block;background:var(--red-ll);color:var(--red);font-size:9px;font-weight:700;border-radius:4px;padding:1px 5px;margin-left:4px;vertical-align:middle}
-.win-box{border-radius:9px;padding:12px;margin-top:14px}
-.win-box .wb-label{font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;margin-bottom:4px}
-
-/* ── TIME GRID ── */
-.time-grid-wrap{position:relative}
-.time-grid{display:flex;gap:0}
-.time-axis{width:46px;flex-shrink:0;position:relative}
-.axis-tick{position:absolute;right:6px;font-size:9px;color:var(--muted);font-family:'DM Mono',monospace;transform:translateY(-50%);white-space:nowrap}
-.time-content{flex:1;position:relative}
-.hour-line{position:absolute;left:0;right:0;border-top:1px solid var(--border)}
-.hour-line.half{border-top-style:dashed;opacity:.4}
-.now-line{position:absolute;left:0;right:0;display:flex;align-items:center;z-index:20;pointer-events:none}
-.now-dot{width:9px;height:9px;border-radius:50%;background:var(--now-line);flex-shrink:0;margin-left:0;box-shadow:0 0 0 3px rgba(229,62,62,.18)}
-.now-track{flex:1;height:2px;background:var(--now-line);opacity:.85}
-.now-label{position:absolute;left:-46px;font-size:9px;font-family:'DM Mono',monospace;color:var(--now-line);font-weight:500;white-space:nowrap}
-
-/* ── CAL BLOCKS ── */
-.cal-block{position:absolute;left:0;right:0;border-radius:8px;border-left:4px solid transparent;padding:5px 8px;overflow:hidden;display:flex;flex-direction:column;gap:2px;transition:opacity .2s}
-.cal-block.done{opacity:.4}
-.cb-title-row{display:flex;align-items:flex-start;gap:6px}
-.cb-name{font-size:11px;font-weight:700;line-height:1.2;flex:1}
-.cb-time-inline{font-size:9px;color:var(--muted);font-family:'DM Mono',monospace;white-space:nowrap;flex-shrink:0}
-.cb-check{width:14px;height:14px;border:2px solid var(--muted);border-radius:3px;cursor:pointer;appearance:none;flex-shrink:0;transition:all .12s}
-.cb-check:checked{background:var(--green);border-color:var(--green)}
-.cb-actions{display:flex;align-items:center;gap:4px;flex-shrink:0}
-.cb-small-btn{border:1px solid var(--border);background:white;border-radius:6px;padding:1px 6px;font-size:9px;font-weight:700;color:var(--mid);cursor:pointer;line-height:1.2;transition:all .12s}
-.cb-small-btn:hover{border-color:var(--dark);color:var(--dark)}
-.cb-sub{font-size:10px;color:var(--mid);font-weight:400;margin-top:1px;line-height:1.3}
-.cb-break-row{display:flex;align-items:flex-start;gap:6px;flex-wrap:wrap;margin-top:3px}
-.cb-break-trigger{border:none;background:none;padding:0;font-family:inherit;font-size:10px;font-weight:700;color:var(--mid);cursor:pointer;text-align:left}
-.cb-break-trigger:hover{color:var(--dark)}
-.cb-break-ideas{display:none;font-size:10px;color:var(--mid);line-height:1.45;flex-basis:100%}
-.cb-break-ideas.open{display:block}
-.cb-notes{width:100%;border:none;background:transparent;font-family:inherit;font-size:10px;color:var(--mid);resize:none;outline:none;margin-top:3px;line-height:1.5;min-height:0}
-.cb-notes::placeholder{color:var(--muted);font-style:italic}
-.cb-blue{background:var(--blue-ll);border-left-color:var(--blue)}
-.cb-yellow{background:var(--yellow-ll);border-left-color:var(--yellow)}
-.cb-green{background:var(--green-ll);border-left-color:var(--green)}
-.cb-red{background:var(--red-ll);border-left-color:var(--red)}
-.cb-purple{background:var(--purple-ll);border-left-color:var(--purple)}
-.cb-food{background:var(--food-ll);border-left-color:var(--food)}
-.cb-rest{background:var(--rest-ll);border-left-color:var(--rest);border:1px solid var(--border);border-left-width:4px}
-
-/* ── EMPTY STATE ── */
-.empty-state{display:flex;flex-direction:column;align-items:center;justify-content:center;height:100%;text-align:center;gap:10px;padding:40px}
-.empty-state .es-icon{font-size:40px;opacity:.35}
-.empty-state h2{font-size:16px;font-weight:600;color:var(--mid)}
-.empty-state p{font-size:12px;color:var(--muted);max-width:220px;line-height:1.5}
-
-/* ── CONFETTI ── */
-.confetti-wrap{position:fixed;inset:0;pointer-events:none;z-index:9999;overflow:hidden}
-.confetti-particle{position:absolute;border-radius:2px;animation:confetti-fall linear forwards}
-@keyframes confetti-fall{
-  0%{transform:translateY(-20px) rotate(0deg);opacity:1}
-  100%{transform:translateY(100vh) rotate(720deg);opacity:0}
-}
-
-/* ── MODALS ── */
-.modal-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,.45);z-index:1000;align-items:center;justify-content:center}
-.modal-overlay.open{display:flex}
-.modal{background:white;border-radius:14px;padding:28px;width:460px;max-width:90vw;max-height:90vh;overflow-y:auto;box-shadow:0 20px 60px rgba(0,0,0,.2)}
-.modal h3{font-family:'DM Serif Display',serif;font-size:20px;font-weight:400;margin-bottom:6px}
-.modal p{font-size:12px;color:var(--mid);margin-bottom:18px;line-height:1.5}
-.modal-btns{display:flex;gap:8px;justify-content:flex-end;margin-top:18px}
-.modal-close{padding:8px 16px;border:1.5px solid var(--border);border-radius:7px;background:white;font-family:inherit;font-size:12px;font-weight:600;color:var(--mid);cursor:pointer}
-.modal-action{padding:8px 20px;border:none;border-radius:7px;background:var(--dark);font-family:inherit;font-size:12px;font-weight:600;color:white;cursor:pointer;transition:background .15s}
-.modal-action:hover{background:#333}
-.day-modal{width:860px}
-.day-modal-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:18px}
-.day-modal-column{display:flex;flex-direction:column;gap:12px}
-.day-modal .panel-section{margin-bottom:0}
-.day-modal .task-card{margin-bottom:0}
-.day-modal .modal-btns{margin-top:10px}
-.day-modal .section-label{margin-bottom:6px}
-.event-grid{display:grid;grid-template-columns:1fr 92px 92px;gap:8px;align-items:center}
-.event-row{display:grid;grid-template-columns:1fr 92px 92px auto;gap:8px;align-items:center;margin-bottom:8px}
-.event-input{border:1.5px solid var(--border);border-radius:7px;padding:7px 9px;font-size:12px;font-family:inherit;color:var(--dark);background:white;outline:none;transition:border-color .15s}
-.event-input:focus{border-color:var(--blue)}
-.event-remove{border:none;background:transparent;color:var(--muted);font-size:12px;cursor:pointer;padding:0 4px}
-.event-remove:hover{color:var(--red)}
-.mini-help{font-size:10px;color:var(--muted);margin-top:-4px;line-height:1.4}
-
-/* ── PRINT MODAL ── */
-.print-type-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:14px}
-.print-type-btn{padding:12px 10px;border-radius:9px;border:2px solid var(--border);background:var(--bg);cursor:pointer;font-family:inherit;text-align:left;transition:all .12s;position:relative}
-.print-type-btn:hover{border-color:var(--dark)}
-.print-type-btn.selected{border-color:var(--blue);background:var(--blue-ll)}
-.print-type-btn .ptb-check{position:absolute;top:8px;right:8px;width:16px;height:16px;background:var(--blue);border-radius:50%;display:none;align-items:center;justify-content:center}
-.print-type-btn.selected .ptb-check{display:flex}
-.print-type-btn .ptb-check::after{content:'✓';font-size:9px;color:white;font-weight:700}
-.print-type-btn .ptb-name{font-size:12px;font-weight:600;display:block;margin-bottom:2px}
-.print-type-btn .ptb-desc{font-size:10px;color:var(--muted);display:block;line-height:1.3}
-.print-wake-row{display:flex;align-items:center;gap:10px;background:var(--bg);border-radius:8px;padding:10px 12px;margin-bottom:14px}
-.print-wake-row label{font-size:11px;font-weight:600;color:var(--mid);flex:1}
-.print-wake-input{border:1.5px solid var(--border);border-radius:7px;padding:6px 10px;font-size:13px;font-family:'DM Mono',monospace;font-weight:500;color:var(--dark);background:white;outline:none;width:110px}
-.print-wake-input:focus{border-color:var(--blue)}
-.print-select-all{font-size:10px;color:var(--blue);cursor:pointer;text-decoration:underline;margin-top:4px;display:inline-block}
-
-/* ── PRINT STYLES ── */
-@media print {
-  * { -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; }
-  html, body { height: auto !important; overflow: visible !important; margin: 0; padding: 0; }
-  .app, .sidebar, .topbar, .notes-panel, .modal-overlay, .confetti-wrap { display: none !important; }
-  #print-area { display: block !important; }
-  #print-area .print-page {
-    page-break-after: always;
-    break-after: page;
-    padding: 14px 18px;
-    font-family: 'DM Sans', sans-serif;
-    color: #1A1814;
-    min-height: auto;
-  }
-  #print-area .print-page:last-child { page-break-after: auto; break-after: auto; }
-  #print-area .print-header { margin-bottom: 10px; border-bottom: 2px solid #1A1814; padding-bottom: 7px; }
-  #print-area .print-top { display:flex; justify-content:space-between; align-items:flex-start; gap:12px; margin-bottom:4px; }
-  #print-area .print-header h1 { font-family: 'DM Serif Display', serif; font-size: 20px; font-weight: 400; margin-bottom: 0; line-height:1.1; }
-  #print-area .print-date { text-align:right; min-width:120px; }
-  #print-area .print-date .pd-label { font-size:9px; font-weight:700; text-transform:uppercase; letter-spacing:.08em; color:#A8A49F; }
-  #print-area .print-date .pd-line { border-bottom: 1px solid #bbb; height: 20px; margin-top: 4px; }
-  #print-area .print-header .ph-sub { font-size: 10px; color: #6B6760; }
-  #print-area .print-fields { display:grid; grid-template-columns:1fr 1fr; gap:8px; margin-bottom:8px; }
-  #print-area .print-fields.three { grid-template-columns:1.5fr 1fr 1fr; }
-  #print-area .print-fields.full { grid-template-columns:1fr; }
-  #print-area .print-field { min-width:0; }
-  #print-area .print-field label { font-size: 8px; font-weight: 700; text-transform: uppercase; letter-spacing: .08em; color: #A8A49F; display: block; margin-bottom: 3px; }
-  #print-area .print-field .pf-line { border-bottom: 1px solid #ccc; height: 20px; }
-  #print-area .print-field.big-field .pf-line { height: 24px; }
-  #print-area .print-fields.small-row { grid-template-columns:repeat(3,1fr); }
-  #print-area .print-block { border: 1px solid #ddd; border-radius: 5px; margin-bottom: 5px; padding: 7px 9px; page-break-inside: avoid; break-inside: avoid; }
-  #print-area .print-block .pb-header { display: flex; align-items: center; gap: 8px; margin-bottom: 4px; }
-  #print-area .print-check { width: 11px; height: 11px; border: 1.5px solid #ccc; border-radius: 3px; display: inline-block; flex-shrink: 0; }
-  #print-area .print-block .pb-name { font-size: 11px; font-weight: 700; flex: 1; }
-  #print-area .print-block .pb-time { font-size: 9px; color: #6B6760; font-family: 'DM Mono', monospace; }
-  #print-area .print-block .pb-ideas { font-size: 9px; color: #A8A49F; margin-bottom: 3px; font-style: italic; }
-  #print-area .print-block .pb-lines { margin-top: 3px; }
-  #print-area .print-block .pb-line { border-bottom: 1px solid #e8e8e8; height: 16px; margin-bottom: 2px; }
-  #print-area .print-meta { font-size: 9px; color: #A8A49F; margin-top: 6px; display: flex; justify-content: space-between; border-top: 1px solid #eee; padding-top: 5px; }
-  #print-area .print-tasks-section { margin-bottom: 10px; border: 1px solid #eee; border-radius: 6px; padding: 9px; }
-  #print-area .print-tasks-title { font-size: 8px; font-weight: 700; text-transform: uppercase; letter-spacing: .1em; color: #A8A49F; margin-bottom: 5px; }
-  #print-area .print-task-row { display: flex; align-items: center; gap: 7px; margin-bottom: 3px; font-size: 10px; }
-  #print-area .print-task-dot { width: 6px; height: 6px; border-radius: 50%; flex-shrink: 0; }
-  #print-area .print-task-check { width: 12px; height: 12px; border: 1.5px solid #ccc; border-radius: 3px; flex-shrink: 0; }
-}
-#print-area{display:none}
-</style>
+-->
 </head>
 <body>
-<div class="app">
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loader"></div>
+    </div>
 
-<!-- ── SIDEBAR ── -->
-<div class="sidebar">
-  <div class="sb-head">
-    <h1>Pooki's<br>Planner</h1>
-    <div class="tagline">No thinking required.</div>
-  </div>
-  <button class="sb-new-btn" onclick="newDay()">＋ New Day</button>
-  <div class="sb-section">Recent Days</div>
-  <div class="sb-list" id="sbList"><div class="sb-empty">No saved days yet.</div></div>
-  <div class="sb-calendar-wrap" id="sbCalendarWrap">
-    <div class="sb-calendar-head">
-      <button class="sch-nav" onclick="calNav(-1)">‹</button>
-      <div class="sch-label" id="calMonthLabel">Calendar</div>
-      <button class="sch-nav" onclick="calNav(1)">›</button>
-    </div>
-    <div class="sb-calendar-grid" id="calGrid"></div>
-  </div>
-</div>
-
-<!-- ── MAIN ── -->
-<div class="main" id="mainShell">
-  <div class="topbar">
-    <span class="topbar-title" id="topbarTitle">Pooki's Planner</span>
-    <span class="topbar-date" id="topbarDate"></span>
-    <span class="topbar-note" id="topbarNote"></span>
-    <span class="saved-toast" id="savedToast">✓ Saved</span>
-    <button class="tb-btn ghost" id="editBtn" style="display:none" onclick="editDay()">✎ Edit Day</button>
-    <button class="tb-btn" onclick="showPrintModal()" title="Print fillable PDF">🖨 Print</button>
-    <button class="tb-btn" id="deleteBtn" style="display:none;color:#c00" onclick="deleteDay()">🗑</button>
-    <button class="tb-btn primary" id="saveBtn" style="display:none" onclick="saveDay()">💾 Save</button>
-  </div>
-
-  <div class="content" id="mainContent">
-    <div class="empty-state">
-      <div class="es-icon">🗓</div>
-      <h2>Nothing here yet</h2>
-      <p>Click <strong>+ New Day</strong> to plan today, or pick a saved day.</p>
-    </div>
-  </div>
-</div>
-</div>
-
-<!-- ── PRINT MODAL ── -->
-<div class="modal-overlay" id="printModal">
-  <div class="modal">
-    <h3>Print Day Sheet(s)</h3>
-    <p>Set a wake time and choose which day types to print. You can print multiple at once.</p>
-    <div class="print-wake-row">
-      <label>⏰ Wake Time</label>
-      <input type="time" id="print-wake-time" class="print-wake-input" value="08:00">
-    </div>
-    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px">
-      <span style="font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--muted)">Select Day Types</span>
-      <span class="print-select-all" onclick="toggleSelectAllPrint()">Select All</span>
-    </div>
-    <div class="print-type-grid">
-      <button class="print-type-btn" data-type="good" onclick="togglePrintType(this)">
-        <div class="ptb-check"></div>
-        <span class="ptb-name">🟢 Good Day</span>
-        <span class="ptb-desc">Full schedule with Big Thing, mediums, smalls</span>
-      </button>
-      <button class="print-type-btn" data-type="chill" onclick="togglePrintType(this)">
-        <div class="ptb-check"></div>
-        <span class="ptb-name">🟡 Chill Day</span>
-        <span class="ptb-desc">Gentler pacing, medium-first layout</span>
-      </button>
-      <button class="print-type-btn" data-type="exhausted" onclick="togglePrintType(this)">
-        <div class="ptb-check"></div>
-        <span class="ptb-name">🟠 Exhausted Day</span>
-        <span class="ptb-desc">Minimal tasks, lots of rest</span>
-      </button>
-      <button class="print-type-btn" data-type="mealprep" onclick="togglePrintType(this)">
-        <div class="ptb-check"></div>
-        <span class="ptb-name">🟣 Meal Prep Day</span>
-        <span class="ptb-desc">Cooking blocks and light tasks</span>
-      </button>
-    </div>
-    <div class="modal-btns">
-      <button class="modal-close" onclick="closePrintModal()">Cancel</button>
-      <button class="modal-action" onclick="doPrint()">🖨 Print Selected</button>
-    </div>
-  </div>
-</div>
-
-<!-- ── DAY EDITOR MODAL ── -->
-<div class="modal-overlay" id="dayModal">
-  <div class="modal day-modal">
-    <h3 id="dayModalTitle">New Day</h3>
-    <p id="dayModalSub">Pick the day shape, add the big thing and any important appointments, then generate the schedule.</p>
-    <div class="day-modal-grid">
-      <div class="day-modal-column">
-        <div class="panel-section">
-          <div class="event-grid">
-            <div>
-              <div class="section-label">Date</div>
-              <input type="date" id="f-date" class="event-input" style="width:100%">
+    <!-- Header Navigation -->
+    <header id="header">
+        <nav>
+            <a href="#home" class="logo">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 20C16.4 20 20 16.4 20 12C20 7.6 16.4 4 12 4C7.6 4 4 7.6 4 12C4 16.4 7.6 20 12 20M12 2C18.5 2 22 6.5 22 12C22 17.5 17.5 22 12 22C6.5 22 2 17.5 2 12C2 6.5 6.5 2 12 2M14.3 16.2L12 10L9.7 16.2L7 11.3L11.3 7L16.2 9.7L14.3 16.2M8.8 17L12 8L15.2 17L20 12L15.2 7L12 15L8.8 7L4 12L8.8 17Z"/>
+                </svg>
+                Mateusz Zubrzycki
+            </a>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
-            <div>
-              <div class="section-label">Wake Time</div>
-              <input type="time" id="f-wake" class="event-input" style="width:100%">
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section" id="home">
+        <div class="hero-bg"></div>
+        <div class="hero-shapes">
+            <div class="floating-accent accent-1"></div>
+            <div class="floating-accent accent-2"></div>
+            <div class="floating-accent accent-3"></div>
+        </div>
+        <div class="hero-content reveal">
+            <h1 class="hero-title">ML Researcher, Data Analyst</h1>
+            <p class="hero-subtitle">B.S. Computer Science, Mathematics at Tufts University</p>
+            <a href="#portfolio" class="cta-button">View My Work</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section" id="about">
+        <div class="about-container reveal">
+            <div class="about-image">
+                <img src="images/templatemo-about-artist.jpg" alt="Photographer">
             </div>
-            <div>
-              <div class="section-label">Day Type</div>
-              <div id="dayTypeLabel" style="font-size:12px;font-weight:700;color:var(--dark);padding:9px 0 0">Good Day</div>
+            <div class="about-content">
+                <h2>About Me</h2>
+
+                <p> With over 5+ years of expierence in the field of machine learning and data analysis, I specialize in merging newly emerging ML research into practical models which sit on the frontier of innovation. My journey began at Tufts University were I pursued my B.S. in Computer Science and Mathematics with a concentration in Physics. </p>
+                <p> From time-series analysis to physics-informed neural networks, I strive to explore the underlying principles of diverse domains and develop fresh solutions backed by rigorous mathematical research. Every model is a careful balance of computational practicality, implementing research papers, and creativity. My work has been accepted at research conferences, including an invitation to present at Joint Mathematics Meeting 2025 in Seattle, MA to an international mathematical audience. My greatest satisfaction, however, comes from seeing my work make a real social and scientific impact.</p>
+                <!-- <p>With over a decade of experience in professional photography, I specialize in capturing the extraordinary in everyday moments. My journey began with a simple camera and an insatiable curiosity about the world around me.</p>
+                <p>From the bustling streets of urban landscapes to the serene beauty of nature, I strive to tell stories through my lens. Each photograph is a carefully crafted piece of art, designed to evoke emotion and preserve memories that last a lifetime.</p>
+                <p>My work has been featured in numerous galleries and publications worldwide, but my greatest satisfaction comes from creating images that resonate with people on a personal level.</p> -->
+                
+                <div class="stats">
+                    <div class="stat-item">
+                        <div class="stat-number">10+</div>
+                        <div class="stat-label">Projects</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">5+</div>
+                        <div class="stat-label">Years of Experience</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">1+</div>
+                        <div class="stat-label">Research Conference Presentations</div>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-        <div class="panel-section">
-          <span class="section-label">What kind of day?</span>
-          <div class="type-grid">
-            <button class="type-btn" data-type="good" onclick="selectType(this)"><span class="tb-emoji">🟢</span><span class="tb-name">Good Day</span><span class="tb-desc">Energy's there. Do the big thing.</span></button>
-            <button class="type-btn" data-type="chill" onclick="selectType(this)"><span class="tb-emoji">🟡</span><span class="tb-name">Chill Day</span><span class="tb-desc">Slower. Progress, not pressure.</span></button>
-            <button class="type-btn" data-type="exhausted" onclick="selectType(this)"><span class="tb-emoji">🟠</span><span class="tb-name">Exhausted</span><span class="tb-desc">Rest is the plan. Tiny steps.</span></button>
-            <button class="type-btn" data-type="mealprep" onclick="selectType(this)"><span class="tb-emoji">🟣</span><span class="tb-name">Meal Prep</span><span class="tb-desc">Future you gets taken care of.</span></button>
-          </div>
+    </section>
+
+    <!-- Portfolio Section with Coverflow -->
+    <section class="portfolio-section" id="portfolio">
+        <div class="section-header reveal">
+            <h2 class="section-title">Featured Work</h2>
+            <p class="section-subtitle">Explore my latest machine learning projects across various domains</p>
         </div>
-        <div class="panel-section">
-          <span class="section-label">Important Things</span>
-          <div class="mini-help">Meetings, church, doctors, or anything fixed in time.</div>
-          <div id="importantEvents"></div>
-        </div>
-      </div>
-      <div class="day-modal-column">
-        <div class="panel-section">
-          <span class="section-label" id="bigThingLabel">Big Thing</span>
-          <div class="task-card">
-            <div class="task-card-header"><span class="task-dot dot-big"></span><span class="tc-label" id="bigThingCardLabel">Big Thing</span><span class="tc-hint" id="bigThingHint">One focus</span></div>
-            <div class="task-input-shell">
-              <input type="text" id="f-big" class="task-input" placeholder="Main focus today…">
-              <button type="button" class="task-randomize-btn" onclick="randomizeTask('f-big','big')">Randomize</button>
+
+        <div class="coverflow-wrapper">
+            <div class="coverflow-container" id="coverflowContainer">
+                <!-- Portrait Photography -->
+                <div class="coverflow-item" data-index="0">
+                    <img src="images/templatemo-amber-folio-01.jpg" alt="Portrait Photography" class="portfolio-image">
+                    <div class="portfolio-overlay">
+                        <div class="portfolio-category">Portrait</div>
+                        <h3 class="portfolio-title">Human Stories</h3>
+                        <p class="portfolio-description">Capturing authentic emotions and personalities</p>
+                    </div>
+                </div>
+
+                <!-- Landscape Photography -->
+                <div class="coverflow-item" data-index="1">
+                    <img src="images/templatemo-amber-folio-02.jpg" alt="Landscape Photography" class="portfolio-image">
+                    <div class="portfolio-overlay">
+                        <div class="portfolio-category">Landscape</div>
+                        <h3 class="portfolio-title">Detecting AI generated images through interpretable gradient field statistics</h3>
+                        <p class="portfolio-description">Hi</p>
+                    </div>
+                </div>
+
+                <!-- Street Photography -->
+                <div class="coverflow-item" data-index="2">
+                    <img src="images/templatemo-amber-folio-03.jpg" alt="Street Photography" class="portfolio-image">
+                    <div class="portfolio-overlay">
+                        <div class="portfolio-category">Street</div>
+                        <h3 class="portfolio-title">Urban Life</h3>
+                        <p class="portfolio-description">Candid moments in city environments</p>
+                    </div>
+                </div>
+
+                <!-- Architecture Photography -->
+                <div class="coverflow-item" data-index="3">
+                    <img src="images/templatemo-amber-folio-04.jpg" alt="Architecture Photography" class="portfolio-image">
+                    <div class="portfolio-overlay">
+                        <div class="portfolio-category">Architecture</div>
+                        <h3 class="portfolio-title">Structural Beauty</h3>
+                        <p class="portfolio-description">Modern lines and timeless designs</p>
+                    </div>
+                </div>
+
+                <!-- Fashion Photography -->
+                <div class="coverflow-item" data-index="4">
+                    <img src="images/templatemo-amber-folio-05.jpg" alt="Fashion Photography" class="portfolio-image">
+                    <div class="portfolio-overlay">
+                        <div class="portfolio-category">Fashion</div>
+                        <h3 class="portfolio-title">Style & Elegance</h3>
+                        <p class="portfolio-description">High fashion and editorial shoots</p>
+                    </div>
+                </div>
+
+                <!-- Wildlife Photography -->
+                <!-- <div class="coverflow-item" data-index="5">
+                    <img src="images/templatemo-amber-folio-06.jpg" alt="Wildlife Photography" class="portfolio-image">
+                    <div class="portfolio-overlay">
+                        <div class="portfolio-category">Wildlife</div>
+                        <h3 class="portfolio-title">Wild Kingdom</h3>
+                        <p class="portfolio-description">Nature's magnificent creatures</p>
+                    </div>
+                </div> -->
+
+                <!-- Black & White Photography
+                <div class="coverflow-item" data-index="6">
+                    <img src="images/templatemo-amber-folio-07.jpg" alt="Black and White Photography" class="portfolio-image">
+                    <div class="portfolio-overlay">
+                        <div class="portfolio-category">Monochrome</div>
+                        <h3 class="portfolio-title">Timeless Classics</h3>
+                        <p class="portfolio-description">The art of black and white</p>
+                    </div>
+                </div> -->
+
+                <!-- Event Photography -->
+                <!-- <div class="coverflow-item" data-index="7">
+                    <img src="images/templatemo-amber-folio-08.jpg" alt="Event Photography" class="portfolio-image">
+                    <div class="portfolio-overlay">
+                        <div class="portfolio-category">Events</div>
+                        <h3 class="portfolio-title">Special Moments</h3>
+                        <p class="portfolio-description">Weddings and celebrations</p>
+                    </div>
+                </div> -->
+
+                <!-- Abstract Photography -->
+                <!-- <div class="coverflow-item" data-index="8">
+                    <img src="images/templatemo-amber-folio-09.jpg" alt="Abstract Photography" class="portfolio-image">
+                    <div class="portfolio-overlay">
+                        <div class="portfolio-category">Abstract</div>
+                        <h3 class="portfolio-title">Creative Vision</h3>
+                        <p class="portfolio-description">Artistic and experimental works</p>
+                    </div>
+                </div> -->
             </div>
-          </div>
-        </div>
-        <div class="panel-section">
-          <span class="section-label">Medium Things</span>
-          <div class="task-card">
-            <div class="task-card-header"><span class="task-dot dot-med"></span><span class="tc-label">Medium Things</span><span class="tc-hint">Up to 2</span></div>
-            <div class="task-input-shell">
-              <input type="text" id="f-med1" class="task-input" placeholder="Medium task 1">
-              <button type="button" class="task-randomize-btn" onclick="randomizeTask('f-med1','med')">Randomize</button>
+
+            <!-- Navigation Controls -->
+            <div class="coverflow-controls">
+                <button class="control-btn" id="prevBtn">‹</button>
+                <button class="control-btn" id="playPauseBtn">▶</button>
+                <button class="control-btn" id="nextBtn">›</button>
             </div>
-            <div class="task-input-shell">
-              <input type="text" id="f-med2" class="task-input" placeholder="Medium task 2 (optional)">
-              <button type="button" class="task-randomize-btn" onclick="randomizeTask('f-med2','med')">Randomize</button>
+
+            <!-- Indicators -->
+            <div class="indicators" id="indicators">
+                <div class="indicator active" data-index="0"></div>
+                <div class="indicator" data-index="1"></div>
+                <div class="indicator" data-index="2"></div>
+                <div class="indicator" data-index="3"></div>
+                <div class="indicator" data-index="4"></div>
+                <!-- <div class="indicator" data-index="5"></div> -->
+                <!-- <div class="indicator" data-index="6"></div>
+                <div class="indicator" data-index="7"></div>
+                <div class="indicator" data-index="8"></div> -->
             </div>
-          </div>
         </div>
-        <div class="panel-section">
-          <span class="section-label">Small Things</span>
-          <div class="task-card">
-            <div class="task-card-header"><span class="task-dot dot-small"></span><span class="tc-label">Small Things</span><span class="tc-hint">Quick wins</span></div>
-            <div class="task-input-shell">
-              <input type="text" id="f-sm1" class="task-input" placeholder="Small task 1">
-              <button type="button" class="task-randomize-btn" onclick="randomizeTask('f-sm1','small')">Randomize</button>
+    </section>
+
+    
+
+    <!-- Services Section -->
+    <section class="services-section" id="services">
+        <div class="services-container">
+            <div class="section-header reveal">
+                <h2 class="section-title">Services Offered</h2>
+                <p class="section-subtitle">Professional photography services tailored to capture your vision</p>
             </div>
-            <div class="task-input-shell">
-              <input type="text" id="f-sm2" class="task-input" placeholder="Small task 2 (optional)">
-              <button type="button" class="task-randomize-btn" onclick="randomizeTask('f-sm2','small')">Randomize</button>
+
+            <div class="services-grid reveal">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 2C10.34 2 9 3.34 9 5C9 6.66 10.34 8 12 8C13.66 8 15 6.66 15 5C15 3.34 13.66 2 12 2ZM12 9C8.69 9 6 11.69 6 15C6 16.66 6.56 18.17 7.5 19.32V22L12 20L16.5 22V19.32C17.44 18.17 18 16.66 18 15C18 11.69 15.31 9 12 9Z"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Portrait Sessions</h3>
+                    <p class="service-description">Professional headshots, personal branding, and lifestyle portraits. Each session includes consultation, styling guidance, and expert retouching.</p>
+                    <div class="service-price">Starting at $450</div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 6.5C12 5.67 11.33 5 10.5 5S9 5.67 9 6.5 9.67 8 10.5 8 12 7.33 12 6.5M13.5 5C12.67 5 12 5.67 12 6.5S12.67 8 13.5 8 15 7.33 15 6.5 14.33 5 13.5 5M12 21.35L5.35 14.7C3.58 12.93 2.61 10.54 2.61 8.04C2.61 3.74 6.05 0.25 10.36 0.21C14.72 0.17 18.29 3.69 18.29 8C18.29 10.53 17.34 12.88 15.58 14.65L12 21.35Z"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Wedding Photography</h3>
+                    <p class="service-description">Complete wedding day coverage from preparation to reception. Includes engagement session, two photographers, and premium album design.</p>
+                    <div class="service-price">Starting at $2,800</div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M19 3H14.82C14.4 1.84 13.3 1 12 1S9.6 1.84 9.18 3H5C3.9 3 3 3.9 3 5V19C3 20.1 3.9 21 5 21H19C20.1 21 21 20.1 21 19V5C21 3.9 20.1 3 19 3ZM12 3C12.55 3 13 3.45 13 4S12.55 5 12 5 11 4.55 11 4 11.45 3 12 3ZM12 18L8 14H11V9H13V14H16L12 18Z"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Commercial Work</h3>
+                    <p class="service-description">Product photography, corporate events, architectural shoots, and marketing campaigns. High-resolution images with commercial licensing.</p>
+                    <div class="service-price">Custom Pricing</div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20.5 11H19V7C19 5.9 18.1 5 17 5H13V3.5C13 2.12 11.88 1 10.5 1S8 2.12 8 3.5V5H4C2.9 5 2 5.9 2 7V10.8H3.5C4.99 10.8 6.2 12.01 6.2 13.5S4.99 16.2 3.5 16.2H2V20C2 21.1 2.9 22 4 22H7.8V20.5C7.8 19.01 9.01 17.8 10.5 17.8S13.2 19.01 13.2 20.5V22H17C18.1 22 19 21.1 19 20V16H20.5C21.88 16 23 14.88 23 13.5S21.88 11 20.5 11Z"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Fine Art Prints</h3>
+                    <p class="service-description">Museum-quality giclée prints on archival paper. Limited editions with certificates of authenticity. Custom framing available.</p>
+                    <div class="service-price">Starting at $180</div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 2L2 7V9C2 14.55 5.84 19.74 11 21C16.16 19.74 20 14.55 20 9V7L12 2ZM12 11.5L9 8.5L10.41 7.09L12 8.67L15.59 5.09L17 6.5L12 11.5Z"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Photo Editing</h3>
+                    <p class="service-description">Professional retouching, color grading, and composite creation. Fast turnaround with unlimited revisions until perfect.</p>
+                    <div class="service-price">$50 per hour</div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 2C6.48 2 2 6.48 2 12S6.48 22 12 22 22 17.52 22 12 17.52 2 12 2ZM11 17L6 12L7.41 10.59L11 14.17L16.59 8.59L18 10L11 17Z"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Photography Workshops</h3>
+                    <p class="service-description">One-on-one mentoring sessions, group workshops, and online masterclasses. Learn composition, lighting, and post-processing techniques.</p>
+                    <div class="service-price">Starting at $200</div>
+                </div>
             </div>
-            <div class="task-input-shell">
-              <input type="text" id="f-sm3" class="task-input" placeholder="Small task 3 (optional)">
-              <button type="button" class="task-randomize-btn" onclick="randomizeTask('f-sm3','small')">Randomize</button>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+        <div class="contact-container">
+            <div class="section-header reveal">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">Let's create something beautiful together</p>
             </div>
-          </div>
+
+            <div class="contact-info reveal">
+                <a href="mailto:hello@capture.com" class="contact-item">
+                    <div class="contact-icon">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20 4H4C2.9 4 2 4.9 2 6V18C2 19.1 2.9 20 4 20H20C21.1 20 22 19.1 22 18V6C22 4.9 21.1 4 20 4ZM20 8L12 13L4 8V6L12 11L20 6V8Z"/>
+                        </svg>
+                    </div>
+                    <div class="contact-label">Email</div>
+                    <div class="contact-value">Mateusz.Zubrzycki@tufts.edu</div>
+                </a>
+
+                <a href="tel:+1234567890" class="contact-item">
+                    <div class="contact-icon">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6.62 10.79C8.06 13.62 10.38 15.94 13.21 17.38L15.41 15.18C15.69 14.9 16.08 14.82 16.43 14.93C17.55 15.3 18.75 15.5 20 15.5C20.55 15.5 21 15.95 21 16.5V20C21 20.55 20.55 21 20 21C10.61 21 3 13.39 3 4C3 3.45 3.45 3 4 3H7.5C8.05 3 8.5 3.45 8.5 4C8.5 5.25 8.7 6.45 9.07 7.57C9.18 7.92 9.1 8.31 8.82 8.59L6.62 10.79Z"/>
+                        </svg>
+                    </div>
+                    <div class="contact-label">Phone</div>
+                    <div class="contact-value">+1 (847) 312-9246</div>
+                </a>
+
+                <a href="https://maps.google.com/?q=New+York+USA" target="_blank" rel="noopener" class="contact-item">
+                    <div class="contact-icon">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 2C8.13 2 5 5.13 5 9C5 14.25 12 22 12 22S19 14.25 19 9C19 5.13 15.87 2 12 2ZM12 11.5C10.62 11.5 9.5 10.38 9.5 9S10.62 6.5 12 6.5S14.5 7.62 14.5 9S13.38 11.5 12 11.5Z"/>
+                        </svg>
+                    </div>
+                    <div class="contact-label">Based in</div>
+                    <div class="contact-value">Boston, USA</div>
+                </a>
+            </div>
         </div>
-        <div class="panel-section">
-          <span class="section-label">Rolled Over Ideas</span>
-          <div class="chips-dropdown" id="chips-rollover"></div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="social-links">
+                <a href="https://instagram.com" target="_blank" rel="noopener" class="social-link" aria-label="Instagram">
+                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7.8 2H16.2C19.4 2 22 4.6 22 7.8V16.2C22 19.4 19.4 22 16.2 22H7.8C4.6 22 2 19.4 2 16.2V7.8C2 4.6 4.6 2 7.8 2M7.6 4C5.61 4 4 5.61 4 7.6V16.4C4 18.39 5.61 20 7.6 20H16.4C18.39 20 20 18.39 20 16.4V7.6C20 5.61 18.39 4 16.4 4H7.6M17.25 5.5C17.94 5.5 18.5 6.06 18.5 6.75S17.94 8 17.25 8S16 7.44 16 6.75S16.56 5.5 17.25 5.5M12 7C14.76 7 17 9.24 17 12S14.76 17 12 17S7 14.76 7 12S9.24 7 12 7M12 9C10.34 9 9 10.34 9 12S10.34 15 12 15S15 13.66 15 12S13.66 9 12 9Z"/>
+                    </svg>
+                </a>
+                <!-- <a href="https://facebook.com/templatemo" target="_blank" rel="noopener" class="social-link" aria-label="Facebook">
+                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 2.04C6.5 2.04 2 6.53 2 12.06C2 17.06 5.66 21.21 10.44 21.96V14.96H7.9V12.06H10.44V9.85C10.44 7.34 11.93 5.96 14.22 5.96C15.31 5.96 16.45 6.15 16.45 6.15V8.62H15.19C13.95 8.62 13.56 9.39 13.56 10.18V12.06H16.34L15.89 14.96H13.56V21.96C18.34 21.21 22 17.06 22 12.06C22 6.53 17.5 2.04 12 2.04Z"/>
+                    </svg>
+                </a>
+                <a href="https://x.com/minthu" target="_blank" rel="noopener" class="social-link" aria-label="Twitter">
+                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M22.46 6C21.69 6.35 20.86 6.58 20 6.69C20.88 6.16 21.56 5.32 21.88 4.31C21.05 4.81 20.13 5.16 19.16 5.36C18.37 4.5 17.26 4 16 4C13.65 4 11.73 5.92 11.73 8.29C11.73 8.63 11.77 8.96 11.84 9.27C8.28 9.09 5.11 7.38 3 4.79C2.63 5.42 2.42 6.16 2.42 6.94C2.42 8.43 3.17 9.75 4.33 10.5C3.62 10.5 2.96 10.3 2.38 10V10.03C2.38 12.11 3.86 13.85 5.82 14.24C5.46 14.34 5.08 14.39 4.69 14.39C4.42 14.39 4.15 14.36 3.89 14.31C4.43 16 6 17.26 7.89 17.29C6.43 18.45 4.58 19.13 2.56 19.13C2.22 19.13 1.88 19.11 1.54 19.07C3.44 20.29 5.74 21 8.23 21C16 21 20.33 14.46 20.33 8.79C20.33 8.6 20.33 8.42 20.32 8.23C21.16 7.63 21.88 6.87 22.46 6Z"/>
+                    </svg>
+                </a> -->
+                <a href="https://linkedin.com" target="_blank" rel="noopener" class="social-link" aria-label="LinkedIn">
+                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M19 3C19.55 3 20.05 3.21 20.41 3.59C20.79 3.95 21 4.45 21 5V19C21 19.55 20.79 20.05 20.41 20.41C20.05 20.79 19.55 21 19 21H5C4.45 21 3.95 20.79 3.59 20.41C3.21 20.05 3 19.55 3 19V5C3 4.45 3.21 3.95 3.59 3.59C3.95 3.21 4.45 3 5 3H19M18.5 18.5V13.2C18.5 11.87 17.45 10.82 16.12 10.82C15.21 10.82 14.46 11.37 14.17 12.15V11H11.5V18.5H14.17V13.57C14.17 12.82 14.79 12.2 15.54 12.2C16.29 12.2 16.91 12.82 16.91 13.57V18.5H18.5M6.88 9.57C7.63 9.57 8.25 8.96 8.25 8.21C8.25 7.46 7.63 6.84 6.88 6.84C6.13 6.84 5.5 7.46 5.5 8.21C5.5 8.96 6.13 9.57 6.88 9.57M8.21 18.5V11H5.5V18.5H8.21Z"/>
+                    </svg>
+                </a>
+            </div>
+            <p class="footer-text">
+                © 2026 Mateusz Zubrzycki <br>
+            </p>
         </div>
-        <div class="panel-section">
-          <span class="section-label">Notes</span>
-          <textarea id="f-planNotes" class="notes-ta" placeholder="Anything to remember…"></textarea>
-        </div>
-      </div>
-    </div>
-    <div class="modal-btns">
-      <button class="modal-close" onclick="closeDayModal()">Cancel</button>
-      <button class="modal-action" onclick="generateSchedule()">Generate Schedule</button>
-    </div>
-  </div>
-</div>
-
-<!-- ── PRINT AREA ── -->
-<div id="print-area"></div>
-
-<!-- ── CONFETTI LAYER ── -->
-<div class="confetti-wrap" id="confettiWrap"></div>
-
-<script>
-// ════════════════════════════════════════════════
-// STATE
-// ════════════════════════════════════════════════
-let days = JSON.parse(localStorage.getItem('pooki-days') || '{}');
-let currentId = null;
-let nowIntervalId = null;
-const PX_PER_MIN = 1.15;
-
-// ════════════════════════════════════════════════
-// SUGGESTIONS
-// ════════════════════════════════════════════════
-const SUGG = {
-  big: {
-    good:['Work on passion project','Deep clean one room','Work on 5 year plan','Apply to 5 jobs','Write a journal entry','Do a long workout or hike','Organize photos or files','Do a creative project'],
-    chill:['Make progress on the project','Draft the email or document','Organize one area of room','Research and plan next steps','Do the thing that keeps getting postponed'],
-    exhausted:['Shower brush teeth','Send one important message', 'Do a 5-minute tidy','Go outside for a few minutes','Spend 10 min on the project'],
-    mealprep:['Batch cook proteins','Roast a full tray of vegetables','Make soups or stews for the week','Portion and store everything'],
-  },
-  med: {
-    good:['Respond to important emails','Do the laundry','Grocery shopping','Plan the rest of the week','Sort finances or bills','Tidy the main space','One errand outside','Vacuum one area','Declutter one drawer'],
-    chill:['Answer messages','One load of laundry','Light tidying','Quick grocery run','Sketch out the week ahead','Water plants'],
-    exhausted:['Text one person back','Order CAVA bowl for delivery','Watch a movie','Lie down with a podcast','Take a shower','Go outside for a few minutes'],
-    mealprep:['Respond to important emails','Do the laundry','Grocery shopping','Plan the rest of the week','Sort finances or bills','Tidy the main space','One errand outside','Vacuum one area','Declutter one drawer'],
-  },
-  small: {
-    good:['Take out trash or recycling','Water plants','Tidy desk','Wipe down counters','Empty dishwasher','Make the bed','Remove dirty dishes from room'],
-    chill:['Make bed','Take out trash','Water plants','Tidy one surface','Light stretching'],
-    exhausted:['Drink a glass of water','Take vitamins','Open a window','Eat something','Lie flat for 10 minutes', 'Stretch lightly','Call or text a friend'],
-    mealprep:['Take out trash or recycling','Water plants','Tidy desk','Wipe down counters','Empty dishwasher','Make the bed','Put away dirty dishes'],
-  },
-};
-
-const BREAK_IDEAS = [
-  '🚶 Go for a short walk outside',
-  '▶️ Watch one YouTube video',
-  '🧘 5-minute meditation or breathing',
-  '☕ Make a cup of tea or coffee',
-  '📖 Read a few pages of a book',
-  '🐾 Play with or pet your animal',
-  '🧹 Tidy one small area (mindlessly)',
-  '💧 Drink a full glass of water',
-  '🌤 Step outside and look at the sky',
-  '🎵 Put on a song you like',
-  '💆 Lie flat on the floor for 5 min',
-  '🤸 Light stretching or a short walk',
-];
-
-// ════════════════════════════════════════════════
-// DAY META
-// ════════════════════════════════════════════════
-const DAY_META = {
-  good:      {label:'🟢 Good Day',      win:'Big Thing done. That\'s the win.',food:'Normal meals — use prepped food.'},
-  chill:     {label:'🟡 Chill Day',     win:'Made progress and stayed gentle.',food:'Simple meals, assembly only.'},
-  exhausted: {label:'🟠 Exhausted Day', win:'You stayed functional. That is enough.',food:'⚠️ Zero cooking pressure — grab-safe food only.'},
-  mealprep:  {label:'🟣 Meal Prep Day', win:'Future days are easier because of today.',food:'This IS the food work — everything else optional.'},
-};
-
-// ════════════════════════════════════════════════
-// TEMPLATES
-// ════════════════════════════════════════════════
-function getTemplate(type, wakeStr) {
-  const wake = parseTime(wakeStr);
-  const T = {
-    good:[
-      {id:'wake',   label:'🌅 Wake + Breakfast',        cls:'cb-rest',   dur:90,  taskId:null,    breakIdeas:null},
-      {id:'big',    label:'🔵 Big Thing',                cls:'cb-blue',   dur:120, taskId:'big',   breakIdeas:null},
-      {id:'lunch',  label:'🍲 Meal + Recovery',          cls:'cb-food',   dur:75,  taskId:null,    breakIdeas:null},
-      {id:'med1',   label:'🟡 Medium Thing #1',          cls:'cb-yellow', dur:105, taskId:'med1',  breakIdeas:null},
-      {id:'break1', label:'☕ Reset Break',              cls:'cb-rest',   dur:30,  taskId:null,    breakIdeas:true},
-      {id:'med2',   label:'🟡 Medium Thing #2',          cls:'cb-yellow', dur:90,  taskId:'med2',  breakIdeas:null},
-      {id:'small',  label:'🟢 Small Things',             cls:'cb-green',  dur:60,  taskId:'smalls',breakIdeas:null},
-      {id:'dinner', label:'🍲 Dinner',                   cls:'cb-food',   dur:60,  taskId:null,    breakIdeas:null},
-      {id:'free',   label:'🌙 Rest + Free Time',         cls:'cb-rest',   dur:90,  taskId:null,    breakIdeas:null},
-    ],
-    chill:[
-      {id:'wake',   label:'🌅 Wake + Slow Breakfast',   cls:'cb-rest',   dur:75,  taskId:null,    breakIdeas:null},
-      {id:'med1',   label:'🟡 Medium Thing #1',          cls:'cb-yellow', dur:90,  taskId:'med1',  breakIdeas:null},
-      {id:'big',    label:'🔵 Big Thing (lighter)',      cls:'cb-blue',   dur:90,  taskId:'big',   breakIdeas:null},
-      {id:'lunch',  label:'🍲 Meal + Long Recovery',    cls:'cb-food',   dur:90,  taskId:null,    breakIdeas:null},
-      {id:'med2',   label:'🟡 Medium Thing #2',          cls:'cb-yellow', dur:75,  taskId:'med2',  breakIdeas:null},
-      {id:'break1', label:'☕ Reset Break',              cls:'cb-rest',   dur:30,  taskId:null,    breakIdeas:true},
-      {id:'small',  label:'🟢 Small Things',             cls:'cb-green',  dur:60,  taskId:'smalls',breakIdeas:null},
-      {id:'free',   label:'🌙 Rest',                    cls:'cb-rest',   dur:90,  taskId:null,    breakIdeas:null},
-    ],
-    exhausted:[
-      {id:'wake',   label:'🌅 Slow Wake — Food First',  cls:'cb-rest',   dur:75,  taskId:null,    breakIdeas:null},
-      {id:'small1', label:'🟢 One Small Thing Only',    cls:'cb-green',  dur:60,  taskId:'smalls',breakIdeas:null},
-      {id:'lunch',  label:'🍲 Meal + Full Rest',         cls:'cb-food',   dur:90,  taskId:null,    breakIdeas:null},
-      {id:'med',    label:'🟡 Medium (only if energy)', cls:'cb-yellow', dur:60,  taskId:'med1',  breakIdeas:null},
-      {id:'nap',    label:'😴 Rest or Nap',             cls:'cb-rest',   dur:90,  taskId:null,    breakIdeas:null},
-      {id:'big',    label:'🔵 Big Thing (optional)',    cls:'cb-blue',   dur:60,  taskId:'big',   breakIdeas:null},
-      {id:'free',   label:'🌙 Recovery — Stop Early',  cls:'cb-rest',   dur:90,  taskId:null,    breakIdeas:null},
-    ],
-    mealprep:[
-      {id:'wake',   label:'🌅 Wake + Plan Meals',       cls:'cb-rest',   dur:30,  taskId:null,    breakIdeas:null},
-      {id:'cook1',  label:'🍳 Meal Prep',               cls:'cb-purple', dur:120, taskId:'big',   breakIdeas:null},
-      {id:'clean1', label:'🧹 Kitchen Cleanup #1',      cls:'cb-rest',   dur:30,  taskId:null,    breakIdeas:null},
-      {id:'eat',    label:'🍲 Eating + Rest',            cls:'cb-food',   dur:60,  taskId:null,    breakIdeas:null},
-      {id:'cook2',  label:'🍳 Portions + Pack',         cls:'cb-purple', dur:90,  taskId:null,    breakIdeas:null},
-      {id:'clean2', label:'🧹 Kitchen Cleanup #2',      cls:'cb-rest',   dur:45,  taskId:null,    breakIdeas:null},
-      {id:'break1', label:'☕ Reset Break',              cls:'cb-rest',   dur:30,  taskId:null,    breakIdeas:true},
-      {id:'med',    label:'🟡 Light Medium Thing',      cls:'cb-yellow', dur:60,  taskId:'med1',  breakIdeas:null},
-      {id:'small',  label:'🟢 Small Things',            cls:'cb-green',  dur:45,  taskId:'smalls',breakIdeas:null},
-      {id:'free',   label:'🌙 Rest — You Did It',       cls:'cb-rest',   dur:90,  taskId:null,    breakIdeas:null},
-    ],
-  };
-  let cursor = wake;
-  return (T[type]||T.good).map(b => {
-    const s = cursor; cursor += b.dur;
-    return {...b, startMin:s, done:false, blockNotes:''};
-  });
-}
-
-function getAppointmentList(planData) {
-  if (Array.isArray(planData.appointments) && planData.appointments.length) {
-    return planData.appointments;
-  }
-  const legacy = [
-    {title:planData.event1Title, time:planData.event1Time, dur:planData.event1Dur},
-    {title:planData.event2Title, time:planData.event2Time, dur:planData.event2Dur},
-  ];
-  return legacy.filter(item => item.title && item.time);
-}
-
-function getImportantBlocks(planData) {
-  return getAppointmentList(planData)
-    .filter(item => item.title && item.time)
-    .map((item, index) => ({
-      id:`event${index+1}`,
-      label:`📌 ${item.title}`,
-      cls:'cb-red',
-      dur:Math.max(15, parseInt(item.dur || '30', 10) || 30),
-      taskId:null,
-      breakIdeas:null,
-      startMin:parseTime(item.time),
-      done:false,
-      blockNotes:'',
-      locked:true,
-      appointment:true,
-    }));
-}
-
-function buildDayBlocks(planData) {
-  const template = getTemplate(planData.type, planData.wakeTime || '08:00').map(block => ({...block, locked:false}));
-  const appointments = getImportantBlocks(planData).sort((a, b) => a.startMin - b.startMin);
-  const schedule = [];
-  let cursor = parseTime(planData.wakeTime || '08:00');
-  let appointmentIndex = 0;
-
-  const flushAppointments = () => {
-    while (appointmentIndex < appointments.length && appointments[appointmentIndex].startMin <= cursor) {
-      const nextAppointment = appointments[appointmentIndex++];
-      schedule.push({...nextAppointment});
-      cursor = Math.max(cursor, nextAppointment.startMin + nextAppointment.dur);
-    }
-  };
-
-  const pushBlockFragment = (block, fragmentDuration, fragmentIndex) => {
-    if (fragmentDuration <= 0) return;
-    schedule.push({
-      ...block,
-      id: fragmentIndex === 0 ? block.id : `${block.id}-part-${fragmentIndex}`,
-      dur: fragmentDuration,
-      startMin: cursor,
-      continued: fragmentIndex > 0,
-    });
-    cursor += fragmentDuration;
-  };
-
-  for (const block of template) {
-    let remaining = block.dur;
-    let fragmentIndex = 0;
-
-    while (remaining > 0) {
-      flushAppointments();
-      const nextAppointment = appointments[appointmentIndex];
-      if (!nextAppointment) {
-        pushBlockFragment(block, remaining, fragmentIndex);
-        remaining = 0;
-        break;
-      }
-
-      if (cursor < nextAppointment.startMin) {
-        const availableBeforeAppointment = nextAppointment.startMin - cursor;
-        const piece = Math.min(remaining, availableBeforeAppointment);
-        pushBlockFragment(block, piece, fragmentIndex);
-        remaining -= piece;
-        fragmentIndex += 1;
-        continue;
-      }
-
-      flushAppointments();
-    }
-  }
-
-  flushAppointments();
-  while (appointmentIndex < appointments.length) {
-    const nextAppointment = appointments[appointmentIndex++];
-    schedule.push({...nextAppointment});
-    cursor = Math.max(cursor, nextAppointment.startMin + nextAppointment.dur);
-  }
-
-  return fillScheduleGaps(schedule.sort((a, b) => a.startMin - b.startMin), 30);
-}
-
-function fillScheduleGaps(blocks, maxGapMinutes) {
-  if (!blocks.length) return blocks;
-  const output = [blocks[0]];
-
-  for (let i = 1; i < blocks.length; i++) {
-    const previous = output[output.length - 1];
-    const current = blocks[i];
-    const previousEnd = previous.startMin + previous.dur;
-    const gap = current.startMin - previousEnd;
-
-    if (gap > maxGapMinutes) {
-      output.push({
-        id:`buffer-${previousEnd}-${i}`,
-        label:'🌙 Free / Buffer',
-        cls:'cb-rest',
-        dur:gap - maxGapMinutes,
-        taskId:null,
-        breakIdeas:null,
-        startMin:previousEnd,
-        done:false,
-        blockNotes:'',
-        locked:false,
-        buffer:true,
-      });
-    }
-
-    output.push(current);
-  }
-
-  return output;
-}
-
-// ════════════════════════════════════════════════
-// TIME HELPERS
-// ════════════════════════════════════════════════
-function parseTime(str){const[h,m]=str.split(':').map(Number);return h*60+(m||0)}
-function fmt(mins){mins=((mins%1440)+1440)%1440;const h=Math.floor(mins/60),m=mins%60,ap=h>=12?'PM':'AM',hh=h%12||12;return`${hh}:${m.toString().padStart(2,'0')} ${ap}`}
-function fmtShort(mins){mins=((mins%1440)+1440)%1440;const h=Math.floor(mins/60),m=mins%60,ap=h>=12?'pm':'am';return`${h%12||12}${m?':'+m.toString().padStart(2,'0'):''}${ap}`}
-function todayStr(){return new Date().toISOString().split('T')[0]}
-function esc(s){return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;')}
-
-// ════════════════════════════════════════════════
-// CHIP LOGIC — dropdown collapsible
-// ════════════════════════════════════════════════
-function buildChips(containerId, sugs, inputIds, multiSelect) {
-  const container = document.getElementById(containerId);
-  if (!container) return;
-  container.innerHTML = '';
-
-  // Toggle button
-  const toggle = document.createElement('button');
-  toggle.type = 'button';
-  toggle.className = 'chips-toggle';
-  toggle.innerHTML = `<span class="ct-arrow">▶</span> Ideas — tap to add`;
-  const body = document.createElement('div');
-  body.className = 'chips-body';
-
-  toggle.onclick = () => {
-    const open = body.classList.toggle('open');
-    toggle.classList.toggle('open', open);
-  };
-
-  sugs.forEach(s => {
-    const btn = document.createElement('button');
-    btn.type = 'button';
-    btn.className = 'chip';
-    btn.textContent = s;
-    btn.onclick = () => {
-      if (multiSelect) {
-        if (btn.classList.contains('active')) {
-          btn.classList.remove('active');
-          for (const id of inputIds) {
-            const el = document.getElementById(id);
-            if (el && el.value === s) { el.value = ''; break; }
-          }
-        } else {
-          let filled = false;
-          for (const id of inputIds) {
-            const el = document.getElementById(id);
-            if (el && !el.value) { el.value = s; filled = true; break; }
-          }
-          if (!filled) {
-            const el = document.getElementById(inputIds[0]);
-            if (el) el.value = s;
-            btn.classList.add('active');
-          } else { btn.classList.add('active'); }
-        }
-      } else {
-        body.querySelectorAll('.chip').forEach(c => c.classList.remove('active'));
-        btn.classList.add('active');
-        const el = document.getElementById(inputIds[0]);
-        if (el) el.value = s;
-      }
-    };
-    body.appendChild(btn);
-  });
-
-  container.appendChild(toggle);
-  container.appendChild(body);
-}
-
-function renderChips(type) {
-  void type;
-}
-
-function randomizeTask(fieldId, poolType) {
-  const planType = (document.querySelector('.type-btn.sel-good,.type-btn.sel-chill,.type-btn.sel-exhausted,.type-btn.sel-mealprep')?.dataset?.type) || 'good';
-  const poolMap = {
-    big: SUGG.big,
-    med: SUGG.med,
-    small: SUGG.small,
-  };
-  const pools = poolMap[poolType] || poolMap.big;
-  const choices = pools[planType] || pools.good || [];
-  if (!choices.length) return;
-  const current = document.getElementById(fieldId);
-  if (!current) return;
-  let next = choices[Math.floor(Math.random() * choices.length)];
-  if (choices.length > 1) {
-    let guard = 0;
-    while (next === current.value.trim() && guard < 8) {
-      next = choices[Math.floor(Math.random() * choices.length)];
-      guard += 1;
-    }
-  }
-  current.value = next;
-  current.dispatchEvent(new Event('input', {bubbles:true}));
-}
-
-function buildRolloverChips(containerId, items, inputIds) {
-  const container = document.getElementById(containerId);
-  if (!container) return;
-  container.innerHTML = '';
-  if (!items.length) {
-    container.innerHTML = '<div style="font-size:11px;color:var(--muted)">Nothing rolled over.</div>';
-    return;
-  }
-
-  const toggle = document.createElement('button');
-  toggle.type = 'button';
-  toggle.className = 'chips-toggle';
-  toggle.innerHTML = `<span class="ct-arrow">▶</span> Rolled Over`;
-  const body = document.createElement('div');
-  body.className = 'chips-body';
-
-  toggle.onclick = () => {
-    const open = body.classList.toggle('open');
-    toggle.classList.toggle('open', open);
-  };
-
-  items.forEach(s => {
-    const btn = document.createElement('button');
-    btn.type = 'button';
-    btn.className = 'chip';
-    btn.textContent = s;
-    btn.onclick = () => {
-      const targets = inputIds.map(id => document.getElementById(id)).filter(Boolean);
-      const target = targets.find(el => !el.value) || targets[0];
-      if (target) target.value = s;
-    };
-    body.appendChild(btn);
-  });
-
-  container.appendChild(toggle);
-  container.appendChild(body);
-}
-
-function setDayTypeLabel(type) {
-  const meta = DAY_META[type] || DAY_META.good;
-  const typeLabel = document.getElementById('dayTypeLabel');
-  const bigLabel = document.getElementById('bigThingLabel');
-  const bigCardLabel = document.getElementById('bigThingCardLabel');
-  const bigHint = document.getElementById('bigThingHint');
-  if (typeLabel) typeLabel.textContent = meta.label;
-  if (bigLabel) bigLabel.textContent = type === 'mealprep' ? 'Meal Prep' : 'Big Thing';
-  if (bigCardLabel) bigCardLabel.textContent = type === 'mealprep' ? 'Meal Prep' : 'Big Thing';
-  if (bigHint) bigHint.textContent = type === 'mealprep' ? 'The main meal-prep block' : 'One focus';
-  const bigInput = document.getElementById('f-big');
-  if (bigInput) bigInput.placeholder = type === 'mealprep' ? 'Meal prep focus…' : 'Main focus today…';
-}
-
-function getRolledOverIdeasForDate(dayId, dateVal) {
-  const targetDate = dateVal || todayStr();
-  const prevIds = Object.keys(days)
-    .filter(id => id !== dayId && days[id].date && days[id].date < targetDate)
-    .sort((a, b) => days[b].date.localeCompare(days[a].date));
-  if (!prevIds.length) return [];
-  const prev = days[prevIds[0]];
-  if (!prev) return [];
-  const done = prev.tasksDone || {};
-  return [
-    ['big', prev.big],
-    ['med1', prev.med1],
-    ['med2', prev.med2],
-    ['sm1', prev.sm1],
-    ['sm2', prev.sm2],
-    ['sm3', prev.sm3],
-  ].filter(([key, text]) => text && !done[key]).map(([, text]) => text);
-}
-
-function renderEventRows(day) {
-  const items = getAppointmentList(day);
-  const el = document.getElementById('importantEvents');
-  if (!el) return;
-  const rows = items.length ? items : [{title:'', time:'', dur:'30'}];
-  el.innerHTML = rows.map((item, index) => `
-    <div class="event-row">
-      <input type="text" class="event-input event-title" placeholder="Meeting, church, doctor…" value="${esc(item.title || '')}">
-      <input type="time" class="event-input event-time" value="${esc(item.time || '')}">
-      <input type="number" class="event-input event-dur" min="15" step="15" value="${esc(item.dur || '30')}">
-      <button type="button" class="event-remove" onclick="removeEventRow(${index})">✕</button>
-    </div>
-  `).join('') + `<button type="button" class="chips-toggle" onclick="addEventRow()" style="margin-top:2px">＋ Add appointment</button>`;
-}
-
-function clearEventRow(num) {
-  const title = document.getElementById(`event${num}Title`);
-  const time = document.getElementById(`event${num}Time`);
-  const dur = document.getElementById(`event${num}Dur`);
-  if (title) title.value = '';
-  if (time) time.value = '';
-  if (dur) dur.value = '30';
-}
-
-function collectEventRows() {
-  const rows = Array.from(document.querySelectorAll('#importantEvents .event-row'));
-  return rows.map(row => ({
-    title: row.querySelector('.event-title')?.value.trim() || '',
-    time: row.querySelector('.event-time')?.value.trim() || '',
-    dur: row.querySelector('.event-dur')?.value.trim() || '30',
-  }));
-}
-
-function addEventRow() {
-  const current = collectEventRows();
-  current.push({title:'', time:'', dur:'30'});
-  renderDynamicEventRows({appointments: current});
-}
-
-function removeEventRow(index) {
-  const current = collectEventRows();
-  current.splice(index, 1);
-  renderDynamicEventRows({appointments: current});
-}
-
-function renderDynamicEventRows(day) {
-  const items = getAppointmentList(day);
-  const el = document.getElementById('importantEvents');
-  if (!el) return;
-  const rows = items.length ? items : [{title:'', time:'', dur:'30'}];
-  el.innerHTML = rows.map((item, index) => `
-    <div class="event-row">
-      <input type="text" class="event-input event-title" placeholder="Meeting, church, doctor…" value="${esc(item.title || '')}">
-      <input type="time" class="event-input event-time" value="${esc(item.time || '')}">
-      <input type="number" class="event-input event-dur" min="15" step="15" value="${esc(item.dur || '30')}">
-      <button type="button" class="event-remove" onclick="removeEventRow(${index})">✕</button>
-    </div>
-  `).join('') + `<button type="button" class="chips-toggle" onclick="addEventRow()" style="margin-top:2px">＋ Add appointment</button>`;
-}
-
-function openDayEditor(day, isNew) {
-  const d = day || {type:'good', wakeTime:'08:00', big:'', med1:'', med2:'', sm1:'', sm2:'', sm3:'', notes:'', date: todayStr(), event1Title:'', event1Time:'', event1Dur:'30', event2Title:'', event2Time:'', event2Dur:'30'};
-  const type = d.type || 'good';
-  const fresh = !!isNew;
-  document.getElementById('dayModalTitle').textContent = fresh ? 'New Day' : 'Edit Day';
-  document.getElementById('dayModalSub').textContent = fresh ? 'Pick the day shape, add the big thing and any important appointments, then generate the schedule.' : 'Make changes, then regenerate the schedule.';
-  document.getElementById('f-date').value = d.date || todayStr();
-  document.getElementById('f-wake').value = d.wakeTime || '08:00';
-  document.getElementById('f-big').value = d.big || '';
-  document.getElementById('f-med1').value = d.med1 || '';
-  document.getElementById('f-med2').value = d.med2 || '';
-  document.getElementById('f-sm1').value = d.sm1 || '';
-  document.getElementById('f-sm2').value = d.sm2 || '';
-  document.getElementById('f-sm3').value = d.sm3 || '';
-  document.getElementById('f-planNotes').value = d.notes || '';
-
-  document.querySelectorAll('#dayModal .type-btn').forEach(b => b.className = 'type-btn');
-  const activeBtn = document.querySelector(`#dayModal .type-btn[data-type="${type}"]`);
-  if (activeBtn) activeBtn.classList.add('sel-'+type);
-  setDayTypeLabel(type);
-
-  const rollover = getRolledOverIdeasForDate(currentId, d.date || todayStr());
-  renderChips(type);
-  buildRolloverChips('chips-rollover', rollover, ['f-big', 'f-med1', 'f-med2', 'f-sm1', 'f-sm2', 'f-sm3']);
-  renderDynamicEventRows(d);
-
-  document.getElementById('dayModal').classList.add('open');
-}
-
-function closeDayModal() {
-  document.getElementById('dayModal').classList.remove('open');
-}
-
-// ════════════════════════════════════════════════
-// RENDER SETUP PANEL
-// ════════════════════════════════════════════════
-function renderSetup(day) {
-  openDayEditor(day);
-}
-
-// ════════════════════════════════════════════════
-// RENDER SCHEDULE (right panel)
-// ════════════════════════════════════════════════
-function renderSchedule(blocks, planData) {
-  const visibleBlocks = blocks && blocks.length ? blocks : buildDayBlocks(planData);
-  const meta = DAY_META[planData.type] || DAY_META.good;
-  const smalls = [planData.sm1, planData.sm2, planData.sm3].filter(Boolean).join(' · ');
-  const taskMap = {big:planData.big||'', med1:planData.med1||'', med2:planData.med2||'', smalls};
-
-  const firstMin = Math.min(...visibleBlocks.map(b => b.startMin));
-  const lastMin  = Math.max(...visibleBlocks.map(b => b.startMin + b.dur));
-  const totalPx  = Math.round((lastMin - firstMin) * PX_PER_MIN) + 60;
-
-  let axisHTML = '', contentHTML = '';
-  const sH = Math.floor(firstMin/60), eH = Math.ceil(lastMin/60);
-  for (let h = sH; h <= eH; h++) {
-    const mins = h*60, py = Math.round((mins-firstMin)*PX_PER_MIN);
-    axisHTML    += `<div class="axis-tick" style="top:${py}px">${fmtShort(mins)}</div>`;
-    contentHTML += `<div class="hour-line" style="top:${py}px"></div>`;
-    const hpy = Math.round((mins+30-firstMin)*PX_PER_MIN);
-    if (hpy < totalPx && h < eH) contentHTML += `<div class="hour-line half" style="top:${hpy}px"></div>`;
-  }
-
-  visibleBlocks.forEach((b, i) => {
-    const top = Math.round((b.startMin - firstMin) * PX_PER_MIN);
-    const bh  = Math.max(Math.round(b.dur * PX_PER_MIN), 36);
-    const endM = b.startMin + b.dur;
-    const sub  = b.taskId ? (taskMap[b.taskId] || '') : '';
-    const showNotes = bh > 48;
-    const controlBtns = `<div class="cb-actions"><button type="button" class="cb-small-btn" onclick="adjustBlockDuration(${i},-15)">−15</button><button type="button" class="cb-small-btn" onclick="adjustBlockDuration(${i},15)">+15</button></div>`;
-    const breakRow = b.breakIdeas ? `<div class="cb-break-row"><button type="button" class="cb-break-trigger" onclick="showBreakIdeas(this)">Rest Break - Ideas: Tea, Reading, Walk</button><div class="cb-break-ideas"></div></div>` : '';
-
-    contentHTML += `
-    <div class="cal-block ${b.cls} ${b.done?'done':''}" id="cb-${i}" style="top:${top}px;height:${bh}px">
-      <div class="cb-title-row">
-        <input type="checkbox" class="cb-check" id="cbck-${i}" ${b.done?'checked':''} onchange="toggleDone(${i},this)">
-        <span class="cb-name">${esc(b.label)}</span>
-        ${controlBtns}
-        <span class="cb-time-inline">${fmtShort(b.startMin)}–${fmtShort(endM)}</span>
-      </div>
-      ${sub ? `<div class="cb-sub">${esc(sub)}</div>` : ''}
-      ${breakRow}
-      ${showNotes ? `<textarea id="bn-${i}" class="cb-notes" placeholder="notes…" onchange="saveBlockNote(${i},this.value)" oninput="autosize(this)">${esc(b.blockNotes||'')}</textarea>` : ''}
-    </div>`;
-  });
-
-  const tasks = [];
-  if (planData.big) tasks.push({dot:'var(--blue)',text:planData.big,key:'big'});
-  if (planData.med1) tasks.push({dot:'var(--yellow)',text:planData.med1,key:'med1'});
-  if (planData.med2) tasks.push({dot:'var(--yellow)',text:planData.med2,key:'med2'});
-  [planData.sm1,planData.sm2,planData.sm3].filter(Boolean).forEach((s,i)=>tasks.push({dot:'var(--green)',text:s,key:'sm'+(i+1)}));
-
-  const winColors = {good:'var(--blue-ll)',chill:'var(--yellow-ll)',exhausted:'var(--red-ll)',mealprep:'var(--purple-ll)'};
-  const tasksDoneState = planData.tasksDone || {};
-
-  let tasksHTML = '';
-  if (tasks.length) {
-    tasks.forEach(t => {
-      const done = tasksDoneState[t.key] || false;
-      tasksHTML += `<div class="summary-row" onclick="toggleTaskDone('${t.key}',this)">
-        <div class="sr-check ${done?'done':''}"></div>
-        <div class="sr-dot" style="background:${t.dot}"></div>
-        <div class="sr-text ${done?'done-text':''}">${esc(t.text)}</div>
-      </div>`;
-    });
-  } else {
-    tasksHTML = '<div style="font-size:11px;color:var(--muted)">No tasks — that\'s okay.</div>';
-  }
-
-  const schedArea = document.getElementById('scheduleArea');
-  schedArea.innerHTML = `
-  <div class="sched-body" style="flex:1;overflow:hidden">
-    <div class="sched-main">
-      <div class="sched-banner">
-        <div class="sb-copy"><strong>This is the recommended time schedule for today.</strong> It is not strict, so no stress.</div>
-      </div>
-      <div class="time-grid-wrap">
-        <div class="time-grid">
-          <div class="time-axis" id="timeAxis" style="height:${totalPx}px">${axisHTML}</div>
-          <div class="time-content" id="timeContent" style="height:${totalPx}px">${contentHTML}</div>
-        </div>
-        <div class="now-line" id="nowLine" style="display:none">
-          <span class="now-label" id="nowLabel"></span>
-          <span class="now-dot"></span>
-          <span class="now-track"></span>
-        </div>
-      </div>
-    </div>
-    <div class="notes-panel">
-      <div class="summary-card">
-        <div class="sc-title">Today's Tasks</div>
-        ${tasksHTML}
-      </div>
-      <span class="section-label">Day Notes</span>
-      <textarea id="f-dayNotes" class="notes-ta" placeholder="How's it going…" oninput="saveDayNotes(this.value)">${esc(planData.dayNotes||'')}</textarea>
-      <div class="win-box" style="background:${winColors[planData.type]||'var(--rest-ll)'}">
-        <div class="wb-label" style="color:var(--muted)">${meta.label}</div>
-        <div style="font-size:11px;color:var(--dark);line-height:1.5;margin-top:3px">${meta.win}</div>
-        <div style="font-size:10px;color:var(--mid);margin-top:6px;font-style:italic">${meta.food}</div>
-      </div>
-    </div>
-  </div>`;
-
-  updateNowLine(visibleBlocks, firstMin, lastMin);
-}
-
-// ════════════════════════════════════════════════
-// BREAK IDEAS
-// ════════════════════════════════════════════════
-function showBreakIdeas(btn) {
-  const row = btn.parentElement;
-  const listEl = row ? row.querySelector('.cb-break-ideas') : null;
-  if (!listEl) return;
-  const open = listEl.classList.toggle('open');
-  if (open) {
-    const shuffled = [...BREAK_IDEAS].sort(() => Math.random() - 0.5).slice(0, 4);
-    listEl.innerHTML = shuffled.map(i => `<div style="padding:1px 0">${esc(i)}</div>`).join('');
-  } else {
-    listEl.innerHTML = '';
-  }
-}
-
-function adjustBlockDuration(index, delta) {
-  if (!currentId || !days[currentId] || !days[currentId].blocks) return;
-  const day = days[currentId];
-  const blocks = day.blocks;
-  const block = blocks[index];
-  if (!block) return;
-  const newDur = Math.max(15, block.dur + delta);
-  const actualDelta = newDur - block.dur;
-  if (!actualDelta) return;
-  block.dur = newDur;
-  for (let i = index + 1; i < blocks.length; i++) {
-    if (!blocks[i].locked) blocks[i].startMin += actualDelta;
-  }
-  saveDays();
-  renderSchedule(blocks, day);
-  startNowInterval();
-}
-
-// ════════════════════════════════════════════════
-// TASK DONE TRACKING (in notes panel)
-// ════════════════════════════════════════════════
-function toggleTaskDone(key, rowEl) {
-  if (!currentId) return;
-  const d = days[currentId];
-  if (!d.tasksDone) d.tasksDone = {};
-  d.tasksDone[key] = !d.tasksDone[key];
-  const check = rowEl.querySelector('.sr-check');
-  const text  = rowEl.querySelector('.sr-text');
-  check.classList.toggle('done', d.tasksDone[key]);
-  text.classList.toggle('done-text', d.tasksDone[key]);
-  if (d.tasksDone[key]) celebrate();
-  autosave();
-}
-
-// ════════════════════════════════════════════════
-// ROLLOVER: find uncompleted tasks from prev day
-// ════════════════════════════════════════════════
-function getPreviousDayRollovers() {
-  if (!currentId) return [];
-  const cur = days[currentId];
-  if (!cur || !cur.date) return [];
-  // Find the most recent day before this one
-  const prevIds = Object.keys(days).filter(id => id !== currentId && days[id].date && days[id].date < cur.date)
-    .sort((a,b) => days[b].date.localeCompare(days[a].date));
-  if (!prevIds.length) return [];
-  const prev = days[prevIds[0]];
-  if (!prev) return [];
-  const done = prev.tasksDone || {};
-  const rollovers = [];
-  const taskDefs = [
-    {key:'big', dot:'var(--blue)', text:prev.big},
-    {key:'med1',dot:'var(--yellow)',text:prev.med1},
-    {key:'med2',dot:'var(--yellow)',text:prev.med2},
-    {key:'sm1', dot:'var(--green)', text:prev.sm1},
-    {key:'sm2', dot:'var(--green)', text:prev.sm2},
-    {key:'sm3', dot:'var(--green)', text:prev.sm3},
-  ];
-  taskDefs.forEach(t => {
-    if (t.text && !done[t.key]) rollovers.push({dot:t.dot, text:t.text});
-  });
-  return rollovers;
-}
-
-// ════════════════════════════════════════════════
-// NOW LINE
-// ════════════════════════════════════════════════
-function updateNowLine(blocks, firstMin, lastMin) {
-  const nowLine = document.getElementById('nowLine');
-  const nowLabel = document.getElementById('nowLabel');
-  if (!nowLine || !blocks) return;
-  const now = new Date();
-  const nowMins = now.getHours()*60 + now.getMinutes();
-  if (nowMins < firstMin || nowMins > lastMin) { nowLine.style.display='none'; return; }
-  nowLine.style.display = 'flex';
-  nowLine.style.top = Math.round((nowMins - firstMin) * PX_PER_MIN) + 'px';
-  nowLabel.textContent = fmt(nowMins);
-}
-
-// ════════════════════════════════════════════════
-// CONFETTI + AUDIO
-// ════════════════════════════════════════════════
-function celebrate() {
-  const wrap = document.getElementById('confettiWrap');
-  const colors = ['#2B5CE6','#C98C00','#1A7A45','#C0392B','#6830C4','#A34010','#FFD700','#FF69B4'];
-  for (let i = 0; i < 60; i++) {
-    const p = document.createElement('div');
-    p.className = 'confetti-particle';
-    const size = 6 + Math.random()*8;
-    p.style.cssText = `width:${size}px;height:${size}px;background:${colors[Math.floor(Math.random()*colors.length)]};left:${Math.random()*100}%;top:-20px;animation-duration:${0.8+Math.random()*1.2}s;animation-delay:${Math.random()*0.3}s;border-radius:${Math.random()>0.5?'50%':'2px'}`;
-    wrap.appendChild(p);
-    setTimeout(() => p.remove(), 2200);
-  }
-  try {
-    const ctx = new (window.AudioContext||window.webkitAudioContext)();
-    [523.25, 659.25, 783.99, 1046.5].forEach((freq, i) => {
-      const osc = ctx.createOscillator();
-      const gain = ctx.createGain();
-      osc.connect(gain); gain.connect(ctx.destination);
-      osc.frequency.value = freq;
-      osc.type = 'sine';
-      gain.gain.setValueAtTime(0, ctx.currentTime + i*0.08);
-      gain.gain.linearRampToValueAtTime(0.18, ctx.currentTime + i*0.08 + 0.02);
-      gain.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + i*0.08 + 0.4);
-      osc.start(ctx.currentTime + i*0.08);
-      osc.stop(ctx.currentTime + i*0.08 + 0.5);
-    });
-  } catch(e){}
-}
-
-// ════════════════════════════════════════════════
-// INTERACTIONS
-// ════════════════════════════════════════════════
-function toggleDone(i, el) {
-  if (!currentId) return;
-  days[currentId].blocks[i].done = el.checked;
-  const block = document.getElementById('cb-'+i);
-  if (block) block.classList.toggle('done', el.checked);
-  if (el.checked) celebrate();
-  autosave();
-}
-
-function saveBlockNote(i, val) {
-  if (!currentId) return;
-  days[currentId].blocks[i].blockNotes = val;
-  autosave();
-}
-
-function saveDayNotes(val) {
-  if (!currentId) return;
-  days[currentId].dayNotes = val;
-  autosave();
-}
-
-function autosize(el) {
-  el.style.height = 'auto';
-  el.style.height = el.scrollHeight + 'px';
-}
-
-function selectType(btn) {
-  document.querySelectorAll('.type-btn').forEach(b => b.className = 'type-btn');
-  const type = btn.dataset.type;
-  btn.classList.add('sel-'+type);
-  setDayTypeLabel(type);
-  if (currentId) days[currentId].type = type;
-  renderChips(type);
-}
-
-function onWakeChange() {
-  if (!currentId) return;
-  days[currentId].wakeTime = document.getElementById('f-wake').value;
-}
-
-function onDateChange() {
-  if (!currentId) return;
-  const newDate = document.getElementById('f-date').value;
-  days[currentId].date = newDate;
-  document.getElementById('topbarTitle').textContent = newDate ? new Date(newDate+'T12:00').toLocaleDateString('en-US',{weekday:'long',month:'long',day:'numeric'}) : 'New Day';
-  autosave();
-  renderSidebar();
-}
-
-function collectForm() {
-  if (!currentId) return;
-  const d = days[currentId];
-  const g = id => { const el=document.getElementById(id); return el?el.value.trim():''; };
-  d.wakeTime = g('f-wake') || d.wakeTime || '08:00';
-  d.date     = g('f-date') || d.date || todayStr();
-  d.type     = document.querySelector('.type-btn.sel-good,.type-btn.sel-chill,.type-btn.sel-exhausted,.type-btn.sel-mealprep')?.dataset?.type || d.type || 'good';
-  d.big      = g('f-big');
-  d.med1     = g('f-med1');
-  d.med2     = g('f-med2');
-  d.sm1      = g('f-sm1');
-  d.sm2      = g('f-sm2');
-  d.sm3      = g('f-sm3');
-  d.notes    = g('f-planNotes');
-  d.appointments = collectEventRows().filter(item => item.title || item.time);
-  d.event1Title = d.appointments[0]?.title || '';
-  d.event1Time  = d.appointments[0]?.time || '';
-  d.event1Dur   = d.appointments[0]?.dur || '30';
-  d.event2Title = d.appointments[1]?.title || '';
-  d.event2Time  = d.appointments[1]?.time || '';
-  d.event2Dur   = d.appointments[1]?.dur || '30';
-  if (d.blocks) {
-    d.blocks.forEach((b,i) => {
-      const ta = document.getElementById('bn-'+i);
-      if (ta) b.blockNotes = ta.value;
-    });
-  }
-  const dayN = document.getElementById('f-dayNotes');
-  if (dayN) d.dayNotes = dayN.value;
-}
-
-function generateSchedule() {
-  if (!currentId) return;
-  collectForm();
-  const d = days[currentId];
-  d.blocks = buildDayBlocks(d);
-  saveDays();
-  renderSidebar();
-  renderSchedule(d.blocks, d);
-  startNowInterval();
-  closeDayModal();
-}
-
-function startNowInterval() {
-  if (nowIntervalId) clearInterval(nowIntervalId);
-  nowIntervalId = setInterval(() => {
-    const nb = currentId ? (days[currentId]||{}).blocks : null;
-    if (!nb || !nb.length) return;
-    const fm = nb[0].startMin, lm = nb[nb.length-1].startMin + nb[nb.length-1].dur;
-    updateNowLine(nb, fm, lm);
-  }, 30000);
-}
-
-// ════════════════════════════════════════════════
-// DAY MANAGEMENT
-// ════════════════════════════════════════════════
-function newDay() {
-  const id = 'day-'+Date.now();
-  days[id] = {id, date:todayStr(), type:'good', wakeTime:'08:00', big:'', med1:'', med2:'', sm1:'', sm2:'', sm3:'', notes:'', dayNotes:'', appointments:[], event1Title:'', event1Time:'', event1Dur:'30', event2Title:'', event2Time:'', event2Dur:'30', blocks:null, tasksDone:{}};
-  saveDays();
-  loadDay(id);
-  renderSidebar();
-  openDayEditor(days[id], true);
-}
-
-function loadDay(id) {
-  if (currentId) { try { collectForm(); } catch(e){} }
-  currentId = id;
-  const d = days[id];
-  if (!d) return;
-  document.getElementById('deleteBtn').style.display = 'inline-flex';
-  document.getElementById('editBtn').style.display   = 'inline-flex';
-  document.getElementById('saveBtn').style.display   = 'inline-flex';
-  document.getElementById('topbarTitle').textContent = d.date ? new Date(d.date+'T12:00').toLocaleDateString('en-US',{weekday:'long',month:'long',day:'numeric'}) : 'New Day';
-  document.getElementById('topbarDate').textContent  = (DAY_META[d.type]||{}).label || '';
-  document.getElementById('topbarNote').textContent   = (DAY_META[d.type]||{}).win || '';
-
-  closeDayModal();
-  document.getElementById('mainContent').innerHTML = `<div id="scheduleArea" style="flex:1;display:flex;flex-direction:column;overflow:hidden"></div>`;
-
-  if (d.blocks && d.blocks.length) {
-    renderSchedule(d.blocks, d);
-    startNowInterval();
-  } else {
-    if (nowIntervalId) { clearInterval(nowIntervalId); nowIntervalId = null; }
-    document.getElementById('scheduleArea').innerHTML = `<div class="empty-state" style="flex:1"><div class="es-icon">→</div><h2>Ready when you are</h2><p>Use <strong>Edit Day</strong> to pick the day shape and generate the schedule.</p></div>`;
-  }
-  renderSidebar();
-}
-
-function editDay() {
-  if (!currentId || !days[currentId]) return;
-  openDayEditor(days[currentId]);
-}
-
-function saveDay() {
-  if (!currentId) return;
-  collectForm();
-  saveDays();
-  renderSidebar();
-  const t = document.getElementById('savedToast');
-  t.classList.add('show');
-  setTimeout(()=>t.classList.remove('show'), 2000);
-}
-
-function autosave() {
-  if (!currentId) return;
-  saveDays();
-}
-
-function deleteDay() {
-  if (!currentId) return;
-  if (!confirm('Delete this day?')) return;
-  if (nowIntervalId) { clearInterval(nowIntervalId); nowIntervalId = null; }
-  delete days[currentId];
-  currentId = null;
-  saveDays();
-  renderSidebar();
-  document.getElementById('deleteBtn').style.display = 'none';
-  document.getElementById('editBtn').style.display = 'none';
-  document.getElementById('saveBtn').style.display   = 'none';
-  document.getElementById('topbarTitle').textContent = 'Pooki\'s Planner';
-  document.getElementById('topbarDate').textContent  = '';
-  document.getElementById('topbarNote').textContent  = '';
-  document.getElementById('mainContent').innerHTML = `<div id="scheduleArea" style="flex:1;display:flex;flex-direction:column;overflow:hidden"><div class="empty-state"><div class="es-icon">🗓</div><h2>Nothing here yet</h2><p>Click <strong>+ New Day</strong> to get started.</p></div></div>`;
-}
-
-function saveDays() { localStorage.setItem('pooki-days', JSON.stringify(days)); }
-
-// ════════════════════════════════════════════════
-// SIDEBAR
-// ════════════════════════════════════════════════
-function renderSidebar() {
-  const list = document.getElementById('sbList');
-  const ids = Object.keys(days).sort((a,b)=>(days[b].date||'').localeCompare(days[a].date||''));
-  if (!ids.length) { list.innerHTML = '<div class="sb-empty">No saved days yet.</div>'; } else {
-    list.innerHTML = ids.map(id => {
-      const d = days[id];
-      const meta = DAY_META[d.type] || {};
-      const dateStr = d.date ? new Date(d.date+'T12:00').toLocaleDateString('en-US',{weekday:'short',month:'short',day:'numeric'}) : 'Untitled';
-      return `<div class="sb-item ${id===currentId?'active':''}" onclick="loadDay('${id}')">
-        <div class="si-date">${dateStr}</div>
-        <div class="si-type">${meta.label||'—'}</div>
-      </div>`;
-    }).join('');
-  }
-  const calWrap = document.getElementById('sbCalendarWrap');
-  if (calWrap) calWrap.style.display = 'block';
-  renderCalGrid();
-}
-
-// ════════════════════════════════════════════════
-// CALENDAR VIEW
-// ════════════════════════════════════════════════
-let calYear = new Date().getFullYear();
-let calMonth = new Date().getMonth();
-
-function calNav(dir) { calMonth += dir; if (calMonth > 11){calMonth=0;calYear++} if (calMonth<0){calMonth=11;calYear--} renderCalGrid(); }
-
-function renderCalGrid() {
-  const label = new Date(calYear, calMonth, 1).toLocaleDateString('en-US',{month:'long',year:'numeric'});
-  document.getElementById('calMonthLabel').textContent = label;
-  const grid = document.getElementById('calGrid');
-  if (!grid) return;
-  const dows = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
-  let html = dows.map(d=>`<div class="sb-cal-dow">${d}</div>`).join('');
-  const first = new Date(calYear, calMonth, 1).getDay();
-  const daysInMonth = new Date(calYear, calMonth+1, 0).getDate();
-  const prevDays = new Date(calYear, calMonth, 0).getDate();
-  const today = todayStr();
-
-  for (let i = first-1; i >= 0; i--) {
-    html += `<div class="sb-cal-day other"><span>${prevDays-i}</span></div>`;
-  }
-  for (let d = 1; d <= daysInMonth; d++) {
-    const dt = `${calYear}-${String(calMonth+1).padStart(2,'0')}-${String(d).padStart(2,'0')}`;
-    const isToday = dt === today;
-    const matchingIds = Object.keys(days).filter(id => days[id].date === dt);
-    html += `<div class="sb-cal-day ${isToday?'today':''} ${matchingIds.length?'has-plan':''}" onclick="calDayClick('${dt}')">
-      <span>${d}</span>
-    </div>`;
-  }
-  grid.innerHTML = html;
-}
-
-function calDayClick(dt) {
-  const existing = Object.keys(days).find(id => days[id].date === dt);
-  if (existing) {
-    loadDay(existing);
-    if (days[existing] && (!days[existing].blocks || !days[existing].blocks.length)) {
-      openDayEditor(days[existing], false);
-    }
-    return;
-  }
-  else {
-    const id = 'day-'+Date.now();
-    days[id] = {id, date:dt, type:'good', wakeTime:'08:00', big:'', med1:'', med2:'', sm1:'', sm2:'', sm3:'', notes:'', dayNotes:'', appointments:[], event1Title:'', event1Time:'', event1Dur:'30', event2Title:'', event2Time:'', event2Dur:'30', blocks:null, tasksDone:{}};
-    saveDays();
-    loadDay(id);
-    renderSidebar();
-    openDayEditor(days[id], true);
-  }
-}
-
-// ════════════════════════════════════════════════
-// PRINT
-// ════════════════════════════════════════════════
-let selectedPrintTypes = new Set();
-
-function showPrintModal() {
-  selectedPrintTypes.clear();
-  document.querySelectorAll('.print-type-btn').forEach(b => b.classList.remove('selected'));
-  // Pre-fill wake time from current day if available
-  if (currentId && days[currentId]) {
-    document.getElementById('print-wake-time').value = days[currentId].wakeTime || '08:00';
-  }
-  document.getElementById('printModal').classList.add('open');
-}
-
-function closePrintModal() {
-  document.getElementById('printModal').classList.remove('open');
-}
-
-function togglePrintType(btn) {
-  const type = btn.dataset.type;
-  if (selectedPrintTypes.has(type)) {
-    selectedPrintTypes.delete(type);
-    btn.classList.remove('selected');
-  } else {
-    selectedPrintTypes.add(type);
-    btn.classList.add('selected');
-  }
-}
-
-function toggleSelectAllPrint() {
-  const allTypes = ['good','chill','exhausted','mealprep'];
-  const allSelected = allTypes.every(t => selectedPrintTypes.has(t));
-  if (allSelected) {
-    selectedPrintTypes.clear();
-    document.querySelectorAll('.print-type-btn').forEach(b => b.classList.remove('selected'));
-  } else {
-    allTypes.forEach(t => selectedPrintTypes.add(t));
-    document.querySelectorAll('.print-type-btn').forEach(b => b.classList.add('selected'));
-  }
-}
-
-function doPrint() {
-  if (selectedPrintTypes.size === 0) {
-    alert('Please select at least one day type to print.');
-    return;
-  }
-  closePrintModal();
-  const wakeTime = document.getElementById('print-wake-time').value || '08:00';
-  const taskLabels = {big:'Big Thing', med1:'Medium #1', med2:'Medium #2', smalls:'Small Things'};
-
-  const pages = [...selectedPrintTypes].map(type => {
-    const blocks = getTemplate(type, wakeTime);
-    const meta = DAY_META[type] || DAY_META.good;
-
-    const blockHTML = blocks.map(b => {
-      const endM = b.startMin + b.dur;
-      const ideasHint = b.breakIdeas ? `<div class="pb-ideas">💡 Ideas: walk · meditate · tea · read · stretch</div>` : '';
-      const lineCount = b.dur >= 90 ? 3 : b.dur >= 60 ? 2 : 1;
-      const linesHTML = Array(lineCount).fill('<div class="pb-line"></div>').join('');
-      return `<div class="print-block">
-        <div class="pb-header">
-          <div class="print-check"></div>
-          <div class="pb-name">${b.label}</div>
-          <div class="pb-time">${fmt(b.startMin)} – ${fmt(endM)}</div>
-        </div>
-        ${ideasHint}
-        <div class="pb-lines">${linesHTML}</div>
-      </div>`;
-    }).join('');
-
-    return `<div class="print-page">
-      <div class="print-header">
-        <div class="print-top">
-          <div>
-            <h1>Pooki's Planner — ${meta.label}</h1>
-            <div class="ph-sub">${meta.win}</div>
-          </div>
-          <div class="print-date">
-            <div class="pd-label">Date</div>
-            <div class="pd-line"></div>
-          </div>
-        </div>
-      </div>
-      <div class="print-fields full">
-        <div class="print-field big-field"><label>Big Thing</label><div class="pf-line"></div></div>
-      </div>
-      <div class="print-fields">
-        <div class="print-field"><label>Medium #1</label><div class="pf-line"></div></div>
-        <div class="print-field"><label>Medium #2</label><div class="pf-line"></div></div>
-      </div>
-      <div class="print-fields small-row">
-        <div class="print-field"><label>Small #1</label><div class="pf-line"></div></div>
-        <div class="print-field"><label>Small #2</label><div class="pf-line"></div></div>
-        <div class="print-field"><label>Small #3</label><div class="pf-line"></div></div>
-      </div>
-      ${blockHTML}
-      <div class="print-meta">
-        <span>${meta.food}</span>
-        <span>pooki's planner · wake ${fmt(parseTime(wakeTime))}</span>
-      </div>
-    </div>`;
-  });
-
-  document.getElementById('print-area').innerHTML = pages.join('');
-  setTimeout(() => window.print(), 150);
-}
-
-// ════════════════════════════════════════════════
-// INIT
-// ════════════════════════════════════════════════
-renderSidebar();
-const ids = Object.keys(days).sort((a,b)=>(days[b].date||'').localeCompare(days[a].date||''));
-if (ids.length) loadDay(ids[0]);
-</script>
+    </footer>
+    <script src="templatemo-amber-script.js"></script>
 </body>
 </html>
-Pooki_Planner.html
-Displaying Pooki_Planner.html.
